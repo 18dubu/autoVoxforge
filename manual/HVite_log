@@ -1,0 +1,18 @@
+HVite -A -D -T 1 -l * -o SWT -b SENT-END -C ./manual/config -H ./manual/hmm7/macros -H ./manual/hmm7/hmmdefs -i ./manual/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I ./manual/words.mlf -S ./manual/train.scp ./manual/dict ./manual/monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 41 physical / 41 logical HMMs
+Label file will be used to align each file
+Aligning File: ./data/Aaron-20080318-kdl/wav/b0019.mfc
