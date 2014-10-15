@@ -317,8 +317,6 @@ for i in trainScpContent:
 fhOut.close()
 
 
-
-
 mk_new_dir('./manual/hmm0')
 command_line = 'HCompV -A -D -T 1 -C ./manual/config -f 0.01 -m -S ./manual/train.scp -M ./manual/hmm0 ./manual/proto'
 cmd_list.append(command_line)
@@ -430,7 +428,7 @@ fhOut = open('./manual/mktri.led', 'w')
 fhOut.write('WB sp\nWB sil\nTC\n')
 fhOut.close()
 
-#This creates 2 files: wintri.mlfwintri.mlf triphones1triphones1
+#This creates 2 files: wintri.mlf triphones1
 command_line = 'HLEd -A -D -T 1 -n ./manual/triphones1 -l \'*\' -i ./manual/wintri.mlf ./manual/mktri.led ./manual/aligned.mlf'
 cmd_list.append(command_line)
 cmd(command_line)
@@ -480,7 +478,73 @@ ST "trees"\n')
 fhOut.close()
 ########
 
+#ERROR [+2662]  FindProtoModel: no proto for sp in hSet
+# fix by delete the sp line in ./manual/fulllist file and run through ./manual dir
+"""
+os.system('./manual/HHEd -A -D -T 1 -H ./hmm12/macros -H ./hmm12/hmmdefs -M ./hmm13 ./tree.hed ./triphones1')
 command_line = 'HHEd -A -D -T 1 -H ./manual/hmm12/macros -H ./manual/hmm12/hmmdefs -M ./manual/hmm13 ./manual/tree.hed ./manual/triphones1 '
 cmd_list.append(command_line)
 cmd(command_line)
+"""
+sed('sp', './manual/fulllist', './manual/fulllist')
+command_line = 'cd ./manual && HHEd -A -D -T 1 -H ./hmm12/macros -H ./hmm12/hmmdefs -M ./hmm13 ./tree.hed ./triphones1'
+cmd_list.append(command_line)
+os.system(command_line)
 
+#create hmm14
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm13/macros -H hmm13/hmmdefs -M hmm14 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+
+#create hmm15
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm14/macros -H hmm14/hmmdefs -M hmm15 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+
+#####
+# The hmmdefs file in the hmm15 folder,
+# along with the tiedlist file,
+# can now be used with Julian to recognize your speech!
+#####
+
+###############################################################################################
+#GMM splits
+os.system('cp ./manual/mktri.hed ./manual/split.hed')
+fhOut = open('./manual/split.hed','a')
+fhOut.write('MU 2 {*.state[2-4].mix}\n')
+fhOut.close()
+
+for i in range(16,21):
+    mkdir('./manual/hmm'+str(i))
+
+os.system('cd ./manual/ && HLEd -A -D -T 1 -n triphones1 -l \'*\' -i wintri.mlf mktri.led aligned.mlf')
+
+command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm15/macros -H hmm15/hmmdefs -M hmm16 split.hed monophones1'
+cmd_list.append(command_line)
+os.system(command_line)
+
+command_line = 'cd ./manual/ && HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -S train.scp -H hmm16/macros -H hmm16/hmmdefs -M hmm17 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+
+command_line = 'cd ./manual/ && HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -s stats -S train.scp -H hmm16/macros -H hmm16/hmmdefs -M hmm17 triphones1'
+cmd_list.append(command_line)
+os.system(command_line)
+
+command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm17/macros -H hmm17/hmmdefs -M hmm18 tree.hed triphones1 '
+cmd_list.append(command_line)
+os.system(command_line)
+
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm18/macros -H hmm18/hmmdefs -M hmm19 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm19/macros -H hmm19/hmmdefs -M hmm20 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+###############################################################################################
+#Running Julian Live
+'''
+os.system('sp ./lib/support_data/julian.jconf ./manual/')
+command_line = 'cd ./manual/ && julian -input mic -C julian.jconf'
+'''

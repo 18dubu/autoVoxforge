@@ -29,7 +29,7 @@
       <file leaf-file-name="pre-processing.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pre-processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="323" column="9" selection-start="12913" selection-end="12913" vertical-scroll-proportion="0.5794392" vertical-offset="3069" max-vertical-offset="5790">
+            <state line="523" column="5" selection-start="21145" selection-end="21169" vertical-scroll-proportion="0.53271025" vertical-offset="6084" max-vertical-offset="6750">
               <folding>
                 <element signature="e#26#46#0" expanded="true" />
                 <element signature="e#1067#1653#0" expanded="false" />
@@ -45,7 +45,7 @@
       <file leaf-file-name="file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="12" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-5.1923075" vertical-offset="345" max-vertical-offset="6105">
+            <state line="9" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="10.384615" vertical-offset="405" max-vertical-offset="6105">
               <folding>
                 <element signature="e#144#181#0" expanded="true" />
                 <element signature="e#853#1005#0" expanded="false" />
@@ -70,6 +70,7 @@
         <option value="$PROJECT_DIR$/manual/pre-processing.py" />
         <option value="$PROJECT_DIR$/lib/file.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/../pre-processing copy 2.py" />
         <option value="$PROJECT_DIR$/pre-processing.py" />
       </list>
     </option>
@@ -351,7 +352,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -364,8 +365,8 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43108505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1736672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43108505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -407,7 +408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="12" selection-start="1019" selection-end="1019" vertical-scroll-proportion="-5.1923075" vertical-offset="345" max-vertical-offset="6105">
+        <state line="9" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="10.384615" vertical-offset="405" max-vertical-offset="6105">
           <folding>
             <element signature="e#144#181#0" expanded="true" />
             <element signature="e#853#1005#0" expanded="false" />
@@ -420,7 +421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pre-processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="323" column="9" selection-start="12913" selection-end="12913" vertical-scroll-proportion="0.5794392" vertical-offset="3069" max-vertical-offset="5790">
+        <state line="523" column="5" selection-start="21145" selection-end="21169" vertical-scroll-proportion="0.53271025" vertical-offset="6084" max-vertical-offset="6750">
           <folding>
             <element signature="e#26#46#0" expanded="true" />
             <element signature="e#1067#1653#0" expanded="false" />
