@@ -360,7 +360,6 @@ ax[2]
  -158                   'R_dx'    -171     "ST_ax_2_107" 
  -159               'R_C-Back'  "ST_ax_2_98"  "ST_ax_2_99" 
  -160           'R_UnStrident'    -161       -166    
- -161              'R_C-Front'  "ST_ax_2_4"  "ST_ax_2_1" 
  -162              'R_C-Front'    -163     "ST_ax_2_113" 
  -163          'R_NonStrident'  "ST_ax_2_112"  "ST_ax_2_126" 
  -164                 'R_Stop'  "ST_ax_2_92"  "ST_ax_2_99" 

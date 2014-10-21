@@ -7,6 +7,125 @@ import re
 import sys
 import inspect
 import shlex, subprocess
+import difflib
+
+def numToWords(num,join=True):
+    '''words = {} convert an integer number into words'''
+    units = ['','one','two','three','four','five','six','seven','eight','nine']
+    teens = ['','eleven','twelve','thirteen','fourteen','fifteen','sixteen', \
+             'seventeen','eighteen','nineteen']
+    tens = ['','ten','twenty','thirty','forty','fifty','sixty','seventy', \
+            'eighty','ninety']
+    thousands = ['','thousand','million','billion','trillion','quadrillion', \
+                 'quintillion','sextillion','septillion','octillion', \
+                 'nonillion','decillion','undecillion','duodecillion', \
+                 'tredecillion','quattuordecillion','sexdecillion', \
+                 'septendecillion','octodecillion','novemdecillion', \
+                 'vigintillion']
+    words = []
+    if num==0: words.append('zero')
+    else:
+        numStr = '%d'%num
+        numStrLen = len(numStr)
+        groups = (numStrLen+2)/3
+        numStr = numStr.zfill(groups*3)
+        for i in range(0,groups*3,3):
+            h,t,u = int(numStr[i]),int(numStr[i+1]),int(numStr[i+2])
+            g = groups-(i/3+1)
+            if h>=1:
+                words.append(units[h])
+                words.append('hundred')
+            if t>1:
+                words.append(tens[t])
+                if u>=1: words.append(units[u])
+            elif t==1:
+                if u>=1: words.append(teens[u])
+                else: words.append(tens[t])
+            else:
+                if u>=1: words.append(units[u])
+            if (g>=1) and ((h+t+u)>0): words.append(thousands[g]+',')
+    if join: return ' '.join(words)
+    return words
+
+
+def read_file_as_2D_dict(file, separater=' '):
+    with open(file, 'r') as fhIn:
+        all = fhIn.readlines()
+        if all:
+            dict1 = dict()
+            array = [re.split(separater, x.rstrip()) for x in all]
+            for i in range(len(array)):
+                tmp = {}
+                for j in range(len(array[i])):
+                    tmp[j] = array[i][j]
+                dict1[i] = tmp
+            return dict1
+        else:
+            return False
+
+
+def getWordCountEachLine(file):
+    with open(file,'r') as fhIn:
+        all = fhIn.readlines()
+        if all:
+            count = []
+            for i in all:
+                count.append(len(i.rstrip().split(' ')))
+            return count
+        else:
+            return False
+
+
+def removeMHatInFile(inputFile):
+    with open(inputFile, 'r') as fhIn:
+        lines = fhIn.read()
+    lines_new = lines.replace('\r','')
+    fhOut = open(inputFile,'wb')
+    fhOut.write(lines_new)
+    fhOut.close()
+
+
+def excludeNamesStartWith(listOfNames, customizeSymbolSpaceSeparated = ''):
+    defaultSymbols = ['.','_']
+    if customizeSymbolSpaceSeparated:
+        defaultSymbols.extend(customizeSymbolSpaceSeparated)
+    cleanFiles = listOfNames
+    for currSymbols in defaultSymbols:
+        cleanFiles = [x for x in cleanFiles if not x.startswith(currSymbols)]
+    return cleanFiles
+
+def getDirNamesInCurrDir(currDir):
+    currDir = check_dir(currDir)
+    files = os.listdir(currDir)
+    files = excludeNamesStartWith(files)
+    paths = [currDir + x for x in files]
+    dirs = [x for x in paths if os.path.isdir(x)]
+    return dirs
+
+def unzipDir(dirPath, mode='s', reName=True):
+    #not finished
+    methods = {
+        'tgz': 'tar zxvf ',
+        'tar': 'tar -xvf ',
+        'bz2': 'tar -xjvf',
+        'gz': 'tar -xzvf',
+        'zip': 'unzip ',
+        '7z': '7za x'
+    }
+    files = os.listdir(dirPath)
+    cleanFiles = [x for x in files if not x.startswith('.')]  # remove files start with .
+
+    if mode == 's':
+        # check all zip files are known type
+        namesList = [x.split('.').pop(0) for x in cleanFiles]
+        extensionsList = [x.split('.')[1:] for x in cleanFiles]
+        maxZipDepth = max([len(x.split('.')[1:]) for x in cleanFiles])
+        extensions = set([item for sublist in extensionsList for item in sublist])
+        if extensions <= set(methods.keys()):  # all known
+            ifContinue()
+    else:
+        print 'unknown mode at this stage'
+        return False
 
 def removeEmptyLinesInFile(fileName):
     command0 = 'cp ' + fileName + ' ' + fileName + '_backup'
@@ -63,6 +182,40 @@ def sed(lineContent, sourceFile, targetFile):
             except Exception as e:
                 print 'sed wrong: command line2', str(e)
 
+def sed_replace(contentToFind, contentChangeTo, sourceFile, targetFile):
+    if isinstance(contentToFind, str):
+        command_line1 = 'sed -e s/' + contentToFind+'/'+contentChangeTo + '/g ' + sourceFile + ' > ./tmp'  # remove the short-pause "sp" entry
+        command_line2 = 'mv ./tmp ' + targetFile
+        try:
+            os.system(command_line1)
+        except Exception as e:
+            print 'sed wrong: command line1', str(e)
+        try:
+            os.system(command_line2)
+        except Exception as e:
+            print 'sed wrong: command line2', str(e)
+
+
+def searchFileWithSimilarNameMotif_returnBest(pathToSearch, motif, caseSensitive = False):
+    oriFiles = os.listdir(pathToSearch)
+    oriFiles = excludeNamesStartWith(oriFiles)
+    return searchMostSimilarStringInList(oriFiles,motif)
+
+#partial string matching
+def searchMostSimilarStringInList(listToSearch, motif, caseSensitive=False):
+    oriFiles = listToSearch
+    mapFiles = []
+    if not caseSensitive:
+        mapFiles = [x.upper() for x in oriFiles]
+        motif = motif.upper()
+    bestScore = 0
+    bestMatch = None
+    for i in range(len(oriFiles)):
+        currFile = oriFiles[i]
+        if difflib.SequenceMatcher(None, mapFiles[i], motif).ratio() > bestScore:
+            bestMatch = currFile
+            bestScore = difflib.SequenceMatcher(None, mapFiles[i], motif).ratio()
+    return bestMatch
 
 def cmd(command_line):
     try:
@@ -119,7 +272,7 @@ def ifContinue():
     if decision == 'c':
         return True
     else:
-        sys.exit("stopped")
+        sys.exit(0)
 
 #$$$$$$$# check if a file exist
 def file_exist (fname):

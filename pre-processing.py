@@ -86,16 +86,17 @@ dataPROMPTSPathList = [dataDir + check_dir(i) + promptsSubDir + 'PROMPTS' for i 
 passDir.extend(list(set(targetDataFolder)-set(targetDataFolder_existing)))
 #generate integratedPROMPTSFile
 # LONG
-def getPrompts(integratedPROMPTSFilePath):
+def getPrompts(integratedPROMPTSFilePath, dataPROMPTSPathList, dataDir):
     if file_exist(integratedPROMPTSFilePath):
         rm(integratedPROMPTSFilePath)
         vi(integratedPROMPTSFilePath)
+    [addBlankLineAtFileEnd(x) for x in dataPROMPTSPathList]
     cat(integratedPROMPTSFilePath, dataPROMPTSPathList)
     removeEmptyLinesInFile(integratedPROMPTSFilePath)
 
     #modify current prompts file to contain the full path in the first col
     ###fast
-    fhOut = open(integratedPROMPTSFilePath + '_tmp', 'w')
+    fhOut = open(integratedPROMPTSFilePath + '_tmp', 'wb')
     with open(integratedPROMPTSFilePath, 'r') as prompts:
         lines = prompts.readlines()
     prompts.close()
@@ -104,35 +105,36 @@ def getPrompts(integratedPROMPTSFilePath):
     fhOut.close()
     command_line = 'mv ' + integratedPROMPTSFilePath + '_tmp ' + integratedPROMPTSFilePath
     os.system(command_line)
+    removeEmptyLinesInFile(integratedPROMPTSFilePath)
     ###
     print 'Integrated prompts file generated'
-getPrompts(integratedPROMPTSFilePath)
+getPrompts(integratedPROMPTSFilePath, dataPROMPTSPathList, dataDir)
 #########################################################################
 #generate wlist file
 """
 The HTK Perl script prompts2wlist can take the prompts file you just created,
 and remove the file name in the first column and print each word on one line into a word list file (wlist).
 """
-def getWlist(wlistFullPath):
+def getWlist(wlistFullPath, integratedPROMPTSFilePath):
     try:
-        command_line = 'perl ./lib/HTK_scripts/prompts2wlist ./manual/prompts ./manual/wlist'
+        command_line = 'perl ./lib/HTK_scripts/prompts2wlist ' + integratedPROMPTSFilePath + ' ' + wlistFullPath
         cmd_list.append(command_line)
         cmd(command_line)
         print 'wlist generated'
-    except:
-        print 'wlist generation error'
+    except Exception as e:
+        print 'wlist generation error' + str(e)
         ifContinue()
 
     # wlist contains non-alphabetical characters:  ERROR [+5013]  ReadString: String too long
     #normalize wlist file by Handong Ma
-    command_lines = ['cp ./manual/wlist ./manual/wlist_ori',
-        'sed \'/[\\"\,\:\;\&\.\\\/\!\s*]/d\' ./manual/wlist > ./tmp1',
+    command_lines = ['cp ' + wlistFullPath + ' ' + wlistFullPath + '_ori',
+        'sed \'/[\\"\,\:\;\&\.\\\/\!\s*]/d\' '+ wlistFullPath + ' > ./tmp1',
         'tr \'[:lower:]\' \'[:upper:]\' < ./tmp1 > ./tmp2', # TO UPPER CASE
         'sed \'/^-/d\' ./tmp2 > tmp1',
         'sed "/^\'/d" tmp1 > tmp2',
         'sed -e \'s/[0-9]*//g\' tmp2 > tmp1', # DELETE NUMBERS
         'sed \'/^$/d\' tmp1 > tmp2',  # DELETE EMPTY LINE
-        'awk \'!x[$0]++\' tmp2 > ./manual/wlist',
+        'awk \'!x[$0]++\' tmp2 > ' + wlistFullPath,
         'rm tmp1 tmp2']
 
     for command_line in command_lines:
@@ -143,14 +145,14 @@ def getWlist(wlistFullPath):
         fhOut = open(wlistFullPath, 'a')
         fhOut.write('SENT-END\nSENT-START')
         fhOut.close()
-        command_line = 'sort ./manual/wlist -o ./manual/wlist'
+        command_line = 'sort ' + wlistFullPath + ' -o ' + wlistFullPath
         cmd_list.append(command_line)
         os.system(command_line)
         print "wlist file edited and sorted"
     except:
         print "edit wlist file error"
         ifContinue()
-getWlist(wlistFullPath)
+getWlist(wlistFullPath, integratedPROMPTSFilePath)
 
 # add pronunciation dictionary
 '''
@@ -159,7 +161,7 @@ thus creating a Pronunciation Dictionnary.  HTK uses the HDMan command to go thr
 and look up the pronunciation for each word in a separate lexicon file,
 and output the result in a Pronunciation Dictionnary.
 '''
-def runHDManGetMonophone():
+def runHDManGetMonophone(wlistFullPath,dictPath='./manual/dict',mono0Path='./manual/monophones0',mono1Path='./manual/monophones1',dlogPath='./manual/dlog'):
     fhOut = open('./manual/global.ded', 'w')
     fhOut.write(
         'AS sp\nRS cmu\nMP sil sil sp')  # This is mainly used to convert all the words in the dict file to uppercase
@@ -172,13 +174,13 @@ def runHDManGetMonophone():
     #this step requires that HTK is successfully installed on the machine and HDMan is executable
     try:
         #run HDMan
-        command_line = "HDMan -A -D -T 1 -m -w ./manual/wlist -n ./manual/monophones1 -i -l ./manual/dlog ./manual/dict ./lexicon/VoxForgeDict"
+        command_line = "HDMan -A -D -T 1 -m -w "+wlistFullPath+" -n "+mono1Path+" -i -l "+dlogPath+" "+dictPath+" ./lexicon/VoxForgeDict"
         cmd_list.append(command_line)
         cmd(command_line)
 
         #create monophones0
 
-        command_line = 'sed /^sp$/d ./manual/monophones1 > ./manual/monophones0'  # remove the short-pause "sp" entry
+        command_line = 'sed /^sp$/d '+mono1Path+' > '+mono0Path  # remove the short-pause "sp" entry
         cmd_list.append(command_line)
         os.system(command_line)
         ##method 2, with stdout
@@ -188,7 +190,7 @@ def runHDManGetMonophone():
     except Exception as e:
         print 'HDMan running error' + str(e)
         ifContinue()
-runHDManGetMonophone()
+runHDManGetMonophone(wlistFullPath)
 
 #create a Master Label File (MLF)
 def getMLF():
@@ -462,7 +464,7 @@ os.system('cat ./manual/fulllist  ./manual/triphones1 > ./manual/fulllist1')
 os.system('perl ./lib/HTK_scripts/fixfulllist_pl ./manual/fulllist1 ./manual/fulllist')
 
 
-########
+########tree.hed modification
 os.system('cp ./lib/support_data/tree.hed ./manual/')
 
 command_line = 'perl ./lib/HTK_scripts/mkclscript.prl TB 350 ./manual/monophones0 >> ./manual/tree.hed'
@@ -495,12 +497,13 @@ os.system(command_line)
 command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm13/macros -H hmm13/hmmdefs -M hmm14 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
+os.system('say "hmm14 has finished"')
 
 #create hmm15
 command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm14/macros -H hmm14/hmmdefs -M hmm15 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
-
+os.system('say "your hmm15 has finished"')
 #####
 # The hmmdefs file in the hmm15 folder,
 # along with the tiedlist file,
@@ -509,42 +512,208 @@ os.system(command_line)
 
 ###############################################################################################
 #GMM splits
-os.system('cp ./manual/mktri.hed ./manual/split.hed')
-fhOut = open('./manual/split.hed','a')
+fhOut = open('./manual/split.hed','w')
 fhOut.write('MU 2 {*.state[2-4].mix}\n')
 fhOut.close()
 
 for i in range(16,21):
     mkdir('./manual/hmm'+str(i))
 
-os.system('cd ./manual/ && HLEd -A -D -T 1 -n triphones1 -l \'*\' -i wintri.mlf mktri.led aligned.mlf')
+#os.system('cd ./manual/ && HLEd -A -D -T 1 -n triphones1 -l \'*\' -i wintri.mlf mktri.led aligned.mlf')
 
-command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm15/macros -H hmm15/hmmdefs -M hmm16 split.hed monophones1'
+command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm15/macros -H hmm15/hmmdefs -M hmm16 split.hed tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
 
 command_line = 'cd ./manual/ && HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -S train.scp -H hmm16/macros -H hmm16/hmmdefs -M hmm17 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
+os.system('say "your hmm17 has finished"')
 
-command_line = 'cd ./manual/ && HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -s stats -S train.scp -H hmm16/macros -H hmm16/hmmdefs -M hmm17 triphones1'
+command_line = 'cd ./manual/ && HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -s stats -S train.scp -H hmm17/macros -H hmm17/hmmdefs -M hmm18 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
+os.system('say "hmm18 has finished"')
 
-command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm17/macros -H hmm17/hmmdefs -M hmm18 tree.hed triphones1 '
+#ERROR [+2663]  ChkTreeObject: TB only valid for 1 mix diagonal covar models
+#solve1: http://www.voxforge.org/home/dev/acousticmodels/linux/create/htkjulius/tutorial/triphones/step-10/comments/getting-error-in-tree-clustering
+#ERROR [+7036]  NewMacro: macro or model name ST_ax_2_1 already exists
+# solve should use split.hed instead of tree.hed
+#os.system('sed -e \'s/^TB/TC/g\' ./manual/tree.hed > tmp')
+#os.system('mv ./tmp ./manual/tree2.hed')
+
+# ERROR [+5010]  InitSource: Cannot open source file t+ow
+command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm18/macros -H hmm18/hmmdefs -M hmm19 split.hed tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
-
-command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm18/macros -H hmm18/hmmdefs -M hmm19 tiedlist'
-cmd_list.append(command_line)
-os.system(command_line)
+os.system('say "hmm19 has finished"')
 
 command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm19/macros -H hmm19/hmmdefs -M hmm20 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
+os.system('say "hmm20 has finished"')
+
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm20/macros -H hmm20/hmmdefs -M hmm21 tiedlist'
+cmd_list.append(command_line)
+os.system(command_line)
+os.system('say "hmm21 has finished"')
+os.system('say "Splitting Hidden Markov Model task has finished"')
+
 ###############################################################################################
 #Running Julian Live
-'''
-os.system('sp ./lib/support_data/julian.jconf ./manual/')
-command_line = 'cd ./manual/ && julian -input mic -C julian.jconf'
-'''
+#cp julian config
+testDataDir = '/Volumes/1/E6998_testing'
+motif = 'prompts'
+integratedPROMPTSFilePath_testing = './manual/prompts_testing'
+wlistFullPath_testing = './manual/wlist_testing'
+dictPath = './manual/dict_testing'
+dictTriPath = './manual/dict-tri'
+grammarFilePath = './manual/fixed.grammar'
+vocaFilePath = './manual/fixed.voca'
+configFilePath = './manual/julian.jconf'
+wavsFilePath = './manual/wavPath_testing'
+mfcsFilePath = './manual/mfcPath_testing'
+scpFilePath = './manual/testing.scp'
+
+targetDirs = getDirNamesInCurrDir(testDataDir)
+targetPrompts = [check_dir(x)+searchFileWithSimilarNameMotif_returnBest(x, motif) for x in targetDirs]
+targetWavs = [check_dir(x)+y for x in targetDirs for y in excludeNamesStartWith(os.listdir(x)) ]
+targetWavs = [x for x in targetWavs if x.endswith('.wav')]
+targetMfcs = [x.replace('wav','mfc') for x in targetWavs]
+getPrompts(integratedPROMPTSFilePath_testing,targetPrompts,testDataDir)
+removeMHatInFile(integratedPROMPTSFilePath_testing)  #no ^M symbol allowed
+
+getWlist(wlistFullPath_testing, integratedPROMPTSFilePath_testing)
+runHDManGetMonophone(wlistFullPath_testing,dictPath)
+
+#generate wav list file
+fhIn = open(wavsFilePath,'w')
+fhIn.write('\n'.join(targetWavs))
+fhIn.close()
+#generate mfc list file
+fhIn = open(mfcsFilePath,'w')
+fhIn.write('\n'.join(targetMfcs))
+fhIn.close()
+#generate scp file for HCopy
+fhIn = open(scpFilePath,'w')
+for i in range(len(targetWavs)):
+    fhIn.write(targetWavs[i] + ' ' + targetMfcs[i]+ '\n')
+fhIn.close()
+
+command_line = 'HCopy -A -D -T 1 -C ./manual/wav_config -S '+scpFilePath
+cmd_list.append(command_line)
+cmd(command_line)
+
+########analysis of prompts file
+#max sentence length
+count = getWordCountEachLine(integratedPROMPTSFilePath_testing)
+sentenceLength = [x-1 for x in count]
+print "the max sentence length is: "
+print max(sentenceLength)
+#voca Table (vocab words)
+voca2D = read_file_as_2D_dict(integratedPROMPTSFilePath_testing)
+#dicrt table from HDMan (with phone)
+dict2D = read_file_as_2D_dict(dictPath,'\s\s+')  # dictPath!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+######writing .grammar file
+if not file_exist(grammarFilePath):
+    vi(grammarFilePath)
+fhIn = open(grammarFilePath,'w')
+firstLine = 'S: NS_B '
+otherLines = ''
+vocaGroup = []
+for i in range(1, max(sentenceLength)+1):
+    firstLine += numToWords(i).upper() + "_LOOP "
+    otherLines += numToWords(i).upper() + "_LOOP: "+numToWords(i).upper()+'_WORD\n'
+    vocaGroup.append(numToWords(i).upper()+'_WORD')
+firstLine += "NS_E\n"
+allContent = firstLine + otherLines
+fhIn.write(allContent)
+fhIn.close()
+######writing voca file
+vi(vocaFilePath+'_tmp')
+fhIn = open(vocaFilePath+'_tmp','w')
+otherLines = ''
+for i in range(len(vocaGroup)):
+    flag = "% " + vocaGroup[i]
+    otherLines += flag +'\n'
+    for line in range(len(voca2D)):
+        if i+1 in voca2D[line].keys():  # first column is the address, negelect it
+            currWord = voca2D[line][i+1]  # first column is the address, negelect it
+            otherLines += currWord + '\n'
+    otherLines += '\n'
+fhIn.write(otherLines)
+fhIn.close()
+######
+#NORMALIZE vocab to map with dict
+command_lines = ['cp ' + vocaFilePath+'_tmp' + ' ' + vocaFilePath+'_tmp' + '_ori',
+        'sed \'/[\\"\,\:\;\&\.\\\/\!\s*]/d\' '+ vocaFilePath+'_tmp' + ' > ./tmp1',
+        'tr \'[:lower:]\' \'[:upper:]\' < ./tmp1 > ./tmp2', # TO UPPER CASE
+        'sed \'/^-/d\' ./tmp2 > tmp1',
+        'sed "/^\'/d" tmp1 > tmp2',
+        'sed -e \'s/[0-9]*//g\' tmp2 > tmp1', # DELETE NUMBERS
+        'sed \'/^$/d\' tmp1 > tmp2',  # DELETE EMPTY LINE
+        'awk \'!x[$0]++\' tmp2 > ' + vocaFilePath+'_tmp',
+        'rm tmp1 tmp2']
+for command_line in command_lines:
+    os.system(command_line)
+
+#mapping dict_testing to fixed.voca
+fhIn = open(vocaFilePath+'_tmp','r')
+allVocab = fhIn.readlines()
+fhIn.close()
+totalNotFind = []
+for i in range(len(allVocab)):
+    vocab = allVocab[i].rstrip()
+    if not vocab.startswith('%'):
+        find = 0
+        for j in range(len(dict2D)):
+            if dict2D[j][0].upper() == vocab.upper():
+                find = 1
+                try:
+                    allVocab[i] = vocab + '\t' + dict2D[j][1] + '\n'  # dict2D[j][1].upper()
+                    break
+                except KeyError:
+                    print 'The following lines are not correctly aligned, please make sure that phones have separate keys'
+                    print dict2D[j]
+                    ifContinue()
+        if find==0:
+            totalNotFind.append(vocab)
+os.system('say "mapping phones finished"')
+
+fhIn = open(vocaFilePath,'w')
+fhIn.write('% NS_B\n<s>\tsil\n\n% NS_E\n</s>\tsil\n')
+fhIn.write(''.join(allVocab))
+fhIn.close()
+
+# delete sp in the end of each line
+sed_replace('sp$','',vocaFilePath,vocaFilePath)
+#sed -e s/'SP'$/''/g fixed.voca
+
+###error running mkdfa.pl
+#Warning: dfa_minimize not found in the same place as mkdfa.pl
+#solution: make sure mkfa/dfa_minimize is in the same folder with mkdfa.pl (if .dSYM is listed as extension, see next line of comment)
+#solution: change mkfa->mkfa.dSYM [in line 15] and dfa_minimize -> dfa_minimize.dSYM [in line 18] in mkdfa.pl file
+command_line  = 'cd ./manual/ && perl ../lib/HTK_scripts/mkdfa.pl fixed'
+os.system(command_line)
+
+if not file_exist(configFilePath):
+    os.system('cp ./lib/support_data/julian.jconf ./manual/')
+    print 'need to manually change the parameters'
+    ifContinue()
+
+#test grammar
+command_line = 'cd ./manual/ && generate.dSYM fixed'
+os.system(command_line)
+
+command_line = 'cd ./manual/ && julius.dSYM -input mic -C ./julian.jconf'
+os.system(command_line)
+
+##error:ERROR: Error while setup work area for recognition
+#comment the following lines
+#-iwsp                  # append a skippable sp model at all word ends
+#-iwsppenalty -70.0     # transition penalty for the appenede sp models
+
+#run with result (list of files input)
+command_line = 'julius.dSYM -filelist ./mfcPath_testing -C ./julian.jconf -outfile'
+os.system(command_line)

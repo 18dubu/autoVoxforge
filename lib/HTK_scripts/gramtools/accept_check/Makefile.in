@@ -1,0 +1,55 @@
+# Copyright (c) 1991-2006 Kawahara Lab., Kyoto University
+# Copyright (c) 2000-2005 Shikano Lab., Nara Institute of Science and Technology
+# Copyright (c) 2005-2006 Julius project team, Nagoya Institute of Technology
+# All rights reserved
+
+SHELL=/bin/sh
+.SUFFIXES:
+.SUFFIXES: .c .o
+.c.o:
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+
+LIBSENT=../../libsent
+CC=@CC@
+CFLAGS=@CFLAGS@
+CPPFLAGS=@CPPFLAGS@ @DEFS@ -I$(LIBSENT)/include `$(LIBSENT)/libsent-config --cflags`
+LDFLAGS=@LDFLAGS@ @LIBS@ -L$(LIBSENT) -lsent `$(LIBSENT)/libsent-config --libs` -lm
+RM=@RM@ -f
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+INSTALL=@INSTALL@
+
+############################################################
+
+OBJ = accept_check.o rdterm.o
+TARGET = accept_check
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $(OBJ) $(LDFLAGS)
+
+############################################################
+
+install: install.bin # install.man install.catman
+
+install.bin: $(TARGET)
+	${INSTALL} -d @bindir@
+	@INSTALL_PROGRAM@ $(TARGET) @bindir@
+
+#install.man:
+#	${INSTALL} -d @mandir@/man1
+#	@INSTALL_DATA@ $(TARGET).jman @mandir@/man1/adinrec.1
+
+#install.catman:
+#	${INSTALL} -d @mandir@/cat1
+#	@INSTALL_DATA@ $(TARGET).jman.txt @mandir@/cat1/adinrec.1
+
+############################################################
+
+clean:
+	$(RM) $(TARGET) *.o *~ core
+
+distclean:
+	$(RM) $(TARGET) *.o *~ core
+	$(RM) Makefile

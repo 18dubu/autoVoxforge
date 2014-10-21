@@ -1,58 +1,61 @@
 WARNING: no script file global.ded
 WARNING: no script file ./lexicon/VoxForgeDict.ded
+Missing Words
+-------------
+ 
 
 Dictionary Usage Statistics
 ---------------------------
   Dictionary    TotalWords WordsUsed  TotalProns PronsUsed
-VoxForgeDict    131358      13848     131358      13848
-        dict     13848      13848      13848      13848
+VoxForgeDict    131410        989     131410        989
+dict_testing       989        989        989        989
 
-13848 words required, 0 missing
+990 words required, 1 missing
 
 New Phone Usage Counts
 ---------------------
-  1. ax    :  7600
-  2. ae    :  1843
-  3. b     :  1681
-  4. l     :  4681
-  5. ow    :  1098
-  6. n     :  5910
-  7. d     :  3551
-  8. m     :  2533
-  9. t     :  4710
- 10. ey    :  1586
- 11. ix    :  3373
- 12. k     :  3653
- 13. sh    :  1076
- 14. aa    :  1649
- 15. z     :  2664
- 16. er    :  2590
- 17. iy    :  3025
- 18. eh    :  2594
- 19. dx    :  1382
- 20. ng    :  1325
- 21. ay    :  1135
- 22. ih    :  2100
- 23. jh    :   682
- 24. s     :  5545
- 25. ao    :  1011
- 26. r     :  4548
- 27. aw    :   299
- 28. ah    :   980
- 29. v     :  1172
- 30. hh    :   662
- 31. p     :  2589
- 32. uw    :   905
- 33. y     :   516
- 34. ch    :   526
- 35. w     :   901
- 36. f     :  1538
- 37. th    :   363
- 38. g     :  1001
- 39. uh    :   219
- 40. dh    :   122
- 41. oy    :   130
- 42. zh    :    85
+  1. ax    :   277
+  2. b     :   113
+  3. ae    :   109
+  4. n     :   322
+  5. d     :   261
+  6. m     :   135
+  7. t     :   249
+  8. ey    :   108
+  9. l     :   265
+ 10. aw    :    29
+ 11. ah    :    69
+ 12. s     :    71
+ 13. k     :   209
+ 14. eh    :   131
+ 15. p     :   114
+ 16. ix    :   138
+ 17. ng    :    95
+ 18. ch    :    42
+ 19. iy    :   170
+ 20. v     :    69
+ 21. w     :    90
+ 22. dx    :    82
+ 23. r     :   263
+ 24. ih    :   120
+ 25. f     :   118
+ 26. er    :   148
+ 27. uw    :    66
+ 28. g     :    75
+ 29. jh    :    44
+ 30. ow    :    80
+ 31. hh    :    60
+ 32. aa    :   101
+ 33. ao    :    83
+ 34. ay    :    90
+ 35. sh    :    23
+ 36. oy    :    10
+ 37. dh    :    19
+ 38. th    :    46
+ 39. z     :    15
+ 40. y     :    41
+ 41. uh    :    22
+ 42. zh    :     2
  43. sil   :     2
 
-Dictionary ./manual/dict created
+Dictionary ./manual/dict_testing created
