@@ -2,6 +2,7 @@ __author__ = 'mahandong'
 
 import os, errno, re
 from lib.file import *
+from lib.string import *
 import shlex, subprocess
 
 ###########################################################################
@@ -574,6 +575,19 @@ configFilePath = './manual/julian.jconf'
 wavsFilePath = './manual/wavPath_testing'
 mfcsFilePath = './manual/mfcPath_testing'
 scpFilePath = './manual/testing.scp'
+validationPath = './manual/validation_testing'
+
+
+####
+####* optional
+#change files in CUE6998_2014_09-20140929 folder to the same name as in prompts
+if 0:
+    for i in excludeNamesStartWith(os.listdir('/Volumes/1/E6998_testing/CUE6998_2014_09-20140929')):
+        if re.search('vf5',i):
+            j = i.replace('5','9')
+            os.system('mv '+check_dir('/Volumes/1/E6998_testing/CUE6998_2014_09-20140929') + i + ' ' +check_dir('/Volumes/1/E6998_testing/CUE6998_2014_09-20140929')+ j)
+
+
 
 targetDirs = getDirNamesInCurrDir(testDataDir)
 targetPrompts = [check_dir(x)+searchFileWithSimilarNameMotif_returnBest(x, motif) for x in targetDirs]
@@ -611,9 +625,10 @@ sentenceLength = [x-1 for x in count]
 print "the max sentence length is: "
 print max(sentenceLength)
 #voca Table (vocab words)
+#rerun point 614
 voca2D = read_file_as_2D_dict(integratedPROMPTSFilePath_testing)
 #dicrt table from HDMan (with phone)
-dict2D = read_file_as_2D_dict(dictPath,'\s\s+')  # dictPath!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dict2D = read_file_as_2D_dict(dictTriPath,'\s\s+')  # dictPath!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ######writing .grammar file
 if not file_exist(grammarFilePath):
@@ -635,12 +650,15 @@ vi(vocaFilePath+'_tmp')
 fhIn = open(vocaFilePath+'_tmp','w')
 otherLines = ''
 for i in range(len(vocaGroup)):
+    occurred = []
     flag = "% " + vocaGroup[i]
     otherLines += flag +'\n'
     for line in range(len(voca2D)):
         if i+1 in voca2D[line].keys():  # first column is the address, negelect it
             currWord = voca2D[line][i+1]  # first column is the address, negelect it
-            otherLines += currWord + '\n'
+            if not currWord in occurred:
+                occurred.append(voca2D[line][i+1])
+                otherLines += currWord + '\n'
     otherLines += '\n'
 fhIn.write(otherLines)
 fhIn.close()
@@ -652,14 +670,14 @@ command_lines = ['cp ' + vocaFilePath+'_tmp' + ' ' + vocaFilePath+'_tmp' + '_ori
         'sed \'/^-/d\' ./tmp2 > tmp1',
         'sed "/^\'/d" tmp1 > tmp2',
         'sed -e \'s/[0-9]*//g\' tmp2 > tmp1', # DELETE NUMBERS
-        'sed \'/^$/d\' tmp1 > tmp2',  # DELETE EMPTY LINE
-        'awk \'!x[$0]++\' tmp2 > ' + vocaFilePath+'_tmp',
+        'sed \'/^$/d\' tmp1 > '+vocaFilePath+'_tmp',  # DELETE EMPTY LINE
+        #'awk \'!x[$0]++\' tmp2 > ' + vocaFilePath+'_tmp', #delete duplicate line
         'rm tmp1 tmp2']
 for command_line in command_lines:
     os.system(command_line)
 
 #mapping dict_testing to fixed.voca
-fhIn = open(vocaFilePath+'_tmp','r')
+fhIn = open(vocaFilePath+'_tmp', 'r')
 allVocab = fhIn.readlines()
 fhIn.close()
 totalNotFind = []
@@ -671,11 +689,13 @@ for i in range(len(allVocab)):
             if dict2D[j][0].upper() == vocab.upper():
                 find = 1
                 try:
-                    allVocab[i] = vocab + '\t' + dict2D[j][1] + '\n'  # dict2D[j][1].upper()
+                    allVocab[i] = vocab + '\t' + dict2D[j][1] + '\n'  # dict2D[j][1] for dictTriPath [2] for dictPath
                     break
                 except KeyError:
                     print 'The following lines are not correctly aligned, please make sure that phones have separate keys'
+                    print "modify the corresponding line in dict file and add an extra space (make there two) between the second andthird column"
                     print dict2D[j]
+                    print 'rerun from <#rerun point 614>'
                     ifContinue()
         if find==0:
             totalNotFind.append(vocab)
@@ -705,6 +725,9 @@ if not file_exist(configFilePath):
 #test grammar
 command_line = 'cd ./manual/ && generate.dSYM fixed'
 os.system(command_line)
+##manually change any line that error occurs in fixed.dict
+#Error: voca_load_htkdict: line 920: corrupted data:
+
 
 command_line = 'cd ./manual/ && julius.dSYM -input mic -C ./julian.jconf'
 os.system(command_line)
@@ -717,3 +740,99 @@ os.system(command_line)
 #run with result (list of files input)
 command_line = 'julius.dSYM -filelist ./mfcPath_testing -C ./julian.jconf -outfile'
 os.system(command_line)
+
+#########################################################
+#Evaluation, sentence alignment
+#get the sentence from prompts into 2D dict
+promptSentence2D = {}
+for i in targetPrompts:
+    if file_exist(i):
+        dirName = os.path.dirname(i).split('/')[-1]
+        with open(i,'r') as fhIn:
+            content = fhIn.readlines()
+            tmp = {}
+            for line in content:
+                if line:
+                    ele = line.rstrip().split(' ')
+                    first = ele.pop(0)
+                    if first != '':
+                        tmp[first] = ' '.join(ele)
+            promptSentence2D[dirName] = tmp
+
+
+#how many search are failed
+outFilePath = open(mfcsFilePath,'r').readlines()
+outFilePath = [x.replace('.mfc','.out').rstrip() for x in outFilePath]
+failedNum = 0
+totalNum = 0
+predictedSentence2D = {}
+preDir = ''#os.path.dirname(outFilePath[0]).split('/')[-1]
+tmp = {}
+for i in outFilePath:
+    dirName = os.path.dirname(i).split('/')[-1]
+    if preDir == '':
+        preDir = dirName
+    currTargetTrack = os.path.basename(i).split('.')[0]
+    if file_exist(i):
+        content = open(i, 'r').read()
+        if dirName == preDir:
+            if re.search('<search failed>', content):
+                targetSentence = '<search failed>'
+            else:
+                targetSentence = re.search(re.escape('<s> ')+"(.*?)"+re.escape(' </s>'),content).group(1)
+            tmp[currTargetTrack] = targetSentence
+        if dirName != preDir or i == outFilePath[-1]:
+            predictedSentence2D[preDir] = tmp
+            preDir = dirName
+            tmp = {}
+            if re.search('<search failed>', content):
+                targetSentence = '<search failed>'
+            else:
+                targetSentence = re.search(re.escape('<s> ')+"(.*?)"+re.escape(' </s>'),content).group(1)
+            tmp[currTargetTrack] = targetSentence
+        totalNum += 1
+        if re.search('<search failed>', content):
+            failedNum += 1
+print 'out of ' + str(totalNum) + ' of processed files, '+ str(failedNum) + ' are failed'
+
+
+#global alignment for two sentences
+#in this case, it aligns the prompts sentence and the predict sentence
+
+# Create sequences to be aligned.
+fhIn = open(validationPath,'w')
+totalInsertion = 0
+totalDeletion = 0
+totalReplacement = 0
+totalMatch = 0
+totalLength = 0
+for dir in predictedSentence2D.keys():
+    for track in predictedSentence2D[dir].keys():
+        prom = promptSentence2D[dir][track].lower()
+        pred = predictedSentence2D[dir][track].lower()
+        if not predictedSentence2D[dir][track] == '<search failed>':
+            matched = stringMatching(prom.split(), pred.split())
+
+            #calculate statistics
+            insert = [x for x in matched[2] if x == 'I']
+            delete = [x for x in matched[2] if x == 'D']
+            replace = [x for x in matched[2] if x == 'R']
+            match = [x for x in matched[2] if x == 'M']
+            totalInsertion += len(insert)
+            totalDeletion += len(delete)
+            totalReplacement += len(replace)
+            totalLength += len(prom.split())
+            totalMatch += len(match)
+            #calculate statistics
+            line1 = 'PROMPT: ' + dir + '\t' + track + '\t' + prom #+ '\t' + ' '.join(matched[0]) + '\t' + ' '.join(matched[2])
+            line2 = 'RESULT: ' + dir + '\t' + track + '\t' + pred #+ '\t' + ' '.join(matched[1])
+            fhIn.write(line1 + '\n')
+            fhIn.write(line2 + '\n')
+fhIn.close()
+totalError = totalReplacement + totalInsertion + totalDeletion
+print 'Total Match: '+str(totalMatch)+'\t'+str(float(totalMatch)/totalLength*100)+'%'
+print 'Total Insertion: '+str(totalInsertion)+'\t'+str(float(totalInsertion)/totalLength*100)+'%'
+print 'Total Deletion: '+str(totalDeletion)+'\t'+str(float(totalDeletion)/totalLength*100)+'%'
+print 'Total Replacement: '+str(totalReplacement)+'\t'+str(float(totalReplacement)/totalLength*100)+'%'
+print 'Total No. Errors: '+str(totalError)+'\t'+str(float(totalError)/totalLength*100)+'%'
+

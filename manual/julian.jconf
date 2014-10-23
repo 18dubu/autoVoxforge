@@ -45,7 +45,7 @@
 ##
 # support ascii hmmdefs or binary format (converted by "mkbinhmm")
 # format (ascii/binary) will be automatically detected
--h hmm15/hmmdefs
+-h hmm21/hmmdefs
 
 ## triphone model needs HMMList that maps logical triphone to physical ones.
 -hlist ./tiedlist

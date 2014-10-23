@@ -128,38 +128,57 @@
 2	[SINCE]	s ih n s
 2	[WE'LL]	w iy l
 3	[TOOK]	t uh k
+3	[THERE]	dh eh r
+3	[HAD]	hh ae d
+3	[IT]	ih t
 3	[INDIAN]	ih n d iy ax n
+3	[AND]	ae n d
+3	[HE]	hh iy
+3	[A]	ax
+3	[THAT]	dh ae t
+3	[THE]	dh ax
 3	[TEETH]	t iy th
 3	[THOUGHT]	th ao t
 3	[MOON]	m uw n
 3	[LAUGHED]	l ae f t
+3	[BUT]	b ah t
 3	[LITTLE]	l ih dx ax l
 3	[DREW]	d r uw
 3	[CHANGED]	ch ey n jh d
 3	[GLANCED]	g l ae n s t
 3	[GRAY]	g r ey
+3	[I]	ay
 3	[THEM]	dh eh m
+3	[ABOUT]	ax b aw t
 3	[BOILED]	b oy l d
 3	[GOING]	g ow ix ng
 3	[HAVE]	hh ae v
 3	[HIM]	hh ih m
+3	[BEHIND]	b ix hh ay n d
+3	[PHILIP]	f ih l ax p
 3	[TRUTH]	t r uw th
 3	[WERE]	w er
 3	[BIT]	b ih t
 3	[FACE]	f ey s
 3	[CAN]	k ae n
+3	[WILL]	w ih l
 3	[BEAUTIFUL]	b y uw dx ax f ax l
 3	[CHURCHILL]	ch er ch ix l
 3	[WANT]	w aa n t
 3	[HID]	hh ih d
+3	[YET]	y eh t
 3	[HEARD]	hh er d
 3	[LOOKED]	l uh k t
 3	[DROPPED]	d r aa p t
 3	[MY]	m ay
+3	[YOU]	y uw
 3	[FITZHUGH]	f ix t s hh y uw
 3	[HELD]	hh eh l d
 3	[CAUGHT]	k aa t
 3	[KNEW]	n uw
+3	[HER]	hh er
+3	[IF]	ih f
+3	[WON'T]	w ow n t
 3	[DID]	d ih d
 3	[PRODUCED]	p r ax d uw s t
 3	[GIVE]	g ih v
@@ -168,17 +187,24 @@
 3	[LAKE]	l ey k
 3	[NEVER]	n eh v er
 3	[WEREN'T]	w er ax n t
+3	[WE'LL]	w iy l
+3	[DO]	d uw
 3	[GOT]	g aa t
 3	[TURNED]	t er n d
 3	[ROBBED]	r aa b d
 3	[CHUCKLED]	ch ah k ax l d
 3	[MADE]	m ey d
+3	[COULD]	k uh d
+3	[ONCE]	w ah n s
 3	[OLIGARCHY]	aa l ax g aa r k iy
 3	[WHO]	hh uw
+3	[WHAT]	w ah t
 3	[DROUGHT]	d r aw t
 3	[NEW]	n uw
 3	[WARDEN]	w ao r d ax n
+3	[MAY]	m ey
 3	[ITALIAN]	ix t ae l y ax n
+3	[LIKE]	l ay k
 3	[AN]	ae n
 3	[AM]	ae m
 3	[BE]	b iy
@@ -190,6 +216,7 @@
 3	[MAN]	m ae n
 3	[NOTICED]	n ow dx ax s t
 3	[TOO]	t uw
+3	[WE]	w iy
 3	[ARE]	aa r
 3	[NIGHT]	n ay t
 3	[TRIED]	t r ay d
@@ -200,6 +227,9 @@
 3	[OUR]	aw er
 3	[ADDED]	ae dx ax d
 3	[AROUND]	er aw n d
+3	[WHEN]	w eh n
+3	[NO]	n ow
+3	[NOW]	n aw
 3	[BOY]	b oy
 3	[HALF]	hh ae f
 3	[MARTIN]	m aa r t ax n
@@ -210,19 +240,28 @@
 3	[INDEED]	ix n d iy d
 3	[KNOCK]	n aa k
 3	[UNEXPECTED]	ah n ix k s p eh k t ix d
+3	[BY]	b ay
 3	[FIGHTING]	f ay dx ix ng
 3	[OBEYED]	ow b ey d
 3	[DOGGONE]	d ao g ao n
 3	[MEAN]	m iy n
+3	[DOWN]	d aw n
+3	[ONLY]	ow n l iy
 3	[MEAT]	m iy t
+3	[DON'T]	d ow n t
 3	[MONTH]	m ah n th
 3	[CONTINUED]	k ax n t ih n y uw d
+3	[THINK]	th ih ng k
+3	[OF]	ah v
 3	[OUGHT]	ao t
+3	[OUT]	aw t
+3	[IN]	ix n
 3	[WOULDN'T]	w uh d ax n t
 3	[HANDLED]	hh ae n d ax l d
 3	[HARDING]	hh aa r dx ix ng
 3	[GO]	g ow
 3	[WHERE]	w eh r
+3	[AFTER]	ae f t er
 3	[RAOUL]	r aa uw l
 3	[ATOLL]	ae dx aa l
 3	[WOLF-DOG]	w uh l f d ao g
@@ -234,12 +273,14 @@
 3	[RINGING]	r ih ng ix ng
 3	[DEAD]	d eh d
 3	[PART]	p aa r t
+3	[I'M]	ay m
 3	[CAME]	k ey m
 3	[CANNOT]	k ae n aa t
 3	[VOICE]	v oy s
 3	[HUGHIE]	hh y uw iy
 3	[HAPPENED]	hh ae p ax n d
 3	[CRIED]	k r ay d
+3	[YOUR]	y ao r
 3	[AWAY]	ax w ey
 3	[JEANNE]	jh iy n
 3	[DATE]	d ey t
@@ -247,6 +288,7 @@
 3	[CHEER]	ch ih r
 3	[TIME]	t ay m
 3	[GIGANTIC]	jh ay g ae n t ix k
+3	[TO]	t uw
 3	[DRANK]	d r ae ng k
 3	[BEGAN]	b ix g ae n
 3	[LEAPT]	l eh p t
@@ -256,8 +298,10 @@
 3	[CRY]	k r ay
 3	[TOLD]	t ow l d
 3	[MOMENT]	m ow m ax n t
+3	[MACDOUGALL]	m ax k d uw g ax l
 3	[TAPPED]	t ae p t
 3	[LOOK]	l uh k
+3	[AT]	ae t
 3	[PLAYING]	p l ey ix ng
 3	[YOU'RE]	y uh r
 3	[FORT]	f ao r t
@@ -265,51 +309,95 @@
 3	[FAIRLY]	f eh r l iy
 3	[COMBINATION]	k aa m b ax n ey sh ax n
 3	[OCCURRED]	ax k er d
+3	[THEN]	dh eh n
 3	[UNFOLDED]	ax n f ow l d ax d
 4	[BEATING]	b iy dx ix ng
 4	[MORE]	m ao r
+4	[HIM]	hh ih m
+4	[HE]	hh iy
+4	[IT]	ih t
 4	[EVEN]	iy v ix n
 4	[DIRT]	d er t
 4	[WILD]	w ay l d
+4	[A]	ax
+4	[THE]	dh ax
+4	[CAUGHT]	k aa t
 4	[CRIB]	k r ih b
 4	[OVER]	ow v er
+4	[HAD]	hh ae d
+4	[LIKE]	l ay k
+4	[AND]	ae n d
 4	[ENDURE]	eh n d y uh r
+4	[BEFORE]	b ix f ao r
 4	[FELT]	f eh l t
+4	[IN]	ix n
 4	[FAR]	f aa r
 4	[MURDER]	m er dx er
+4	[AT]	ae t
+4	[TO]	t uw
+4	[WANT]	w aa n t
+4	[GO]	g ow
 4	[BEG]	b eh g
+4	[DOWN]	d aw n
+4	[YOU]	y uw
 4	[MEET]	m iy t
 4	[CHANCE]	ch ae n s
 4	[INCIDENT]	ih n s ax d ax n t
+4	[NO]	n ow
+4	[THEM]	dh eh m
+4	[COULD]	k uh d
 4	[PRIDE]	p r ay d
+4	[OF]	ah v
+4	[WILL]	w ih l
+4	[GOING]	g ow ix ng
+4	[THERE]	dh eh r
 4	[CARE]	k eh r
 4	[HAIR]	hh eh r
 4	[NARROWED]	n eh r ow d
 4	[FULL]	f uh l
+4	[IF]	ih f
 4	[BACK]	b ae k
+4	[AHEAD]	ax hh eh d
+4	[ONE]	w ah n
+4	[HAVE]	hh ae v
+4	[YOUR]	y ao r
+4	[THAT]	dh ae t
 4	[PIERRE]	p iy eh r
+4	[BE]	b iy
 4	[FEW]	f y uw
+4	[NOT]	n aa t
 4	[NOTHING]	n ah th ix ng
+4	[DAY]	d ey
 4	[WHY]	w ay
 4	[WON]	w ah n
 4	[ACHIEVE]	ax ch iy v
 4	[KEEP]	k iy p
 4	[CONTEMPLATING]	k aa n t ax m p l ey dx ix ng
 4	[FLAMING]	f l ey m ix ng
+4	[WERE]	w er
 4	[LINDERMAN]	l ay n d er m ax n
 4	[LAY]	l ey
 4	[FORGOTTEN]	f er g aa t ax n
 4	[ANY]	eh n iy
 4	[BIG]	b ih g
+4	[MY]	m ay
+4	[I]	ay
+4	[OUT]	aw t
 4	[CAN'T]	k ae n t
+4	[INDIAN]	ih n d iy ax n
+4	[NEVER]	n eh v er
 4	[WHITTEMORE]	w ih t m ao r
 4	[ME]	m iy
 4	[WORKING]	w er k ix ng
 4	[COMPLETELY]	k ax m p l iy t l iy
+4	[WOULD]	w uh d
 4	[WANTED]	w aa n t ax d
 4	[VEGETATION]	v eh jh ax t ey sh ax n
 4	[BUCOLIC]	b y uw k aa l ix k
 4	[PREACHER]	p r iy ch er
+4	[AN]	ae n
+4	[ARE]	aa r
+4	[WITH]	w ih dh
 4	[BEEN]	b ih n
 4	[ANTICIPATE]	ae n t ih s ax p ey t
 4	[RANCHO]	r ae n ch ow
@@ -323,45 +411,71 @@
 4	[REFUGEE]	r eh f y uw jh iy
 4	[FOUNDATION]	f aw n d ey sh ax n
 4	[UNTO]	ah n t uw
+4	[ON]	aa n
 4	[WORTH]	w er th
+4	[DON'T]	d ow n t
+4	[ATE]	ey t
 4	[BLOOD]	b l ah d
+4	[VOICE]	v oy s
+4	[WON'T]	w ow n t
 4	[WOOD]	w uh d
+4	[MUCH]	m ah ch
+4	[DO]	d uw
+4	[MAY]	m ey
 4	[EARLY]	er l iy
 4	[MATTER]	m ae dx er
 4	[MR]	m ih s t er
+4	[TOO]	t uw
 4	[THIRD]	th er d
 4	[ARM]	aa r m
+4	[MOMENT]	m ow m ax n t
+4	[HER]	hh er
 4	[CUNNING]	k ah n ix ng
 4	[EMPTIED]	eh m p t iy d
 4	[FEEL]	f iy l
 4	[BREAK]	b r ey k
 4	[ANOTHER]	ax n ah dh er
+4	[AM]	ae m
 4	[FIGURING]	f ih g y er ix ng
 4	[WEIGHT]	w ey t
+4	[BOY]	b oy
+4	[CAME]	k ey m
+4	[FOUND]	f aw n d
 4	[NAKATA]	n aa k aa dx ax
 4	[COMMITTED]	k ax m ih dx ax d
 4	[CROOKED-LEG]	k r uh k ax d l eh g
+4	[EIGHTEEN]	ey t iy n
+4	[FOR]	f ao r
 4	[TRYING]	t r ay ix ng
 4	[GREATLY]	g r ey t l iy
 4	[LIFTED]	l ih f t ax d
 4	[PAT]	p ae t
+4	[THEY]	dh ey
 4	[CATCH]	k ae ch
 4	[VALIANTLY]	v ae l y ax n t l iy
 4	[GRAVEL]	g r ae v ax l
 4	[READ]	r eh d
+4	[HEARD]	hh er d
 4	[MANAGE]	m ae n ax jh
+4	[DIE]	d ay
 4	[LENGTH]	l eh ng k th
 4	[COMING]	k ah m ix ng
 4	[TRIUMPHANTLY]	t r ay ah m f ax n t l iy
 4	[HOPE]	hh ow p
+4	[TWO]	t uw
+4	[GIVE]	g ih v
+4	[TAKE]	t ey k
 4	[FEARING]	f ih r ix ng
 4	[FOLLOWING]	f aa l ow ix ng
 4	[COME]	k ah m
+4	[ALL]	ao l
+4	[MAN]	m ae n
 4	[BROUGHT]	b r ao t
 4	[CONTRIBUTED]	k ax n t r ih b y uw dx ix d
 4	[FOLLOW]	f aa l ow
 4	[ALLOW]	ax l aw
 4	[AVERAGE]	ae v er ix jh
+4	[THEIR]	dh eh r
 4	[AGO]	ax g ow
 4	[NEAR]	n ih r
 4	[WHIPPED]	w ih p t
@@ -369,84 +483,153 @@
 4	[LEFT]	l eh f t
 4	[AIR]	eh r
 4	[CLUCKING]	k l ah k ix ng
+4	[TIME]	t ay m
 4	[EDGED]	eh jh d
 4	[DOG]	d ao g
 4	[DINNER]	d ih n er
 4	[DIED]	d ay d
+4	[JEANNE]	jh iy n
 4	[DETERMINED]	d ix t er m ax n d
 4	[DELIVERED]	d ix l ih v er d
 4	[PICTURE]	p ih k ch er
 4	[DRAW]	d r ao
+4	[FIRE]	f ay er
+4	[LOOK]	l uh k
 4	[TWENTIETH]	t w eh n t iy ax th
+4	[I'M]	ay m
 4	[EVER]	eh v er
 4	[LETTER]	l eh dx er
 4	[AURORA]	er ao r ax
 4	[CLUBBED]	k l ah b d
+4	[OUR]	aw er
+4	[ABOUT]	ax b aw t
 4	[FAITH]	f ey th
+4	[THREE]	th r iy
+5	[AND]	ae n d
 5	[THRILLING]	th r ih l ix ng
+5	[HALF]	hh ae f
+5	[NO]	n ow
+5	[NOT]	n aa t
 5	[POKED]	p ow k t
 5	[FLEW]	f l uw
 5	[FILLED]	f ih l d
+5	[A]	ax
 5	[LE]	l ax
+5	[THE]	dh ax
+5	[BACK]	b ae k
+5	[WITH]	w ih dh
+5	[WHEN]	w eh n
+5	[HE]	hh iy
 5	[ALREADY]	ao l r eh dx iy
+5	[TWO]	t uw
 5	[DAWN]	d ao n
 5	[SHUT]	sh ah t
 5	[CORNER]	k ao r n er
 5	[GAVE]	g ey v
+5	[POOR]	p uh r
+5	[WERE]	w er
 5	[INFORMATION]	ih n f er m ey sh ax n
+5	[OUT]	aw t
+5	[THERE]	dh eh r
+5	[GOT]	g aa t
+5	[HER]	hh er
+5	[HAVE]	hh ae v
+5	[CHANCE]	ch ae n s
 5	[RECOVER]	r ix k ah v er
+5	[IT]	ih t
+5	[BE]	b iy
+5	[TO]	t uw
 5	[RED]	r eh d
+5	[TRUTH]	t r uw th
+5	[FOR]	f ao r
+5	[DIE]	d ay
+5	[FROM]	f r ah m
 5	[CALLED]	k ao l d
+5	[OF]	ah v
 5	[INTO]	ix n t uw
+5	[EVERY]	eh v er iy
+5	[BEEN]	b ih n
 5	[LIGHTED]	l ay dx ax d
 5	[WAGER]	w ey jh er
+5	[PICTURE]	p ih k ch er
+5	[WHERE]	w eh r
+5	[DID]	d ih d
 5	[COUPLE]	k ah p ax l
+5	[ME]	m iy
+5	[ONE]	w ah n
 5	[GONE]	g ao n
+5	[I]	ay
 5	[MEANING]	m iy n ix ng
+5	[MORE]	m ao r
 5	[POPULAR]	p aa p y ax l er
+5	[OUR]	aw er
 5	[MENTAL]	m eh n t ax l
+5	[BROUGHT]	b r ao t
 5	[ANYTHING]	eh n iy th ih ng
 5	[LAW]	l ao
 5	[HARP]	hh aa r p
 5	[EMMA]	eh m ax
 5	[FIFTH]	f ih f th
 5	[REMEMBER]	r ix m eh m b er
+5	[BY]	b ay
+5	[THAT]	dh ae t
 5	[CRITICIZED]	k r ih dx ax s ay z d
 5	[MAP]	m ae p
+5	[TOOK]	t uh k
+5	[HAD]	hh ae d
 5	[GRIPPED]	g r ih p t
 5	[REPLY]	r ix p l ay
+5	[COULD]	k uh d
+5	[NOTHING]	n ah th ix ng
 5	[CONTINUE]	k ax n t ih n y uw
 5	[RAW]	r aa
+5	[YOUR]	y ao r
+5	[BOY]	b oy
+5	[ALL]	ao l
 5	[BORN]	b ao r n
 5	[BALANCE]	b ae l ax n s
+5	[PART]	p aa r t
+5	[CAN]	k ae n
 5	[FORTY]	f ao r dx iy
+5	[YOU]	y uw
 5	[ATHLETIC]	ae th l eh dx ix k
+5	[AN]	ae n
 5	[BELIEVE]	b ix l iy v
 5	[OVERWHELMED]	ow v er w eh l m d
 5	[GROWING]	g r ow ix ng
 5	[CABIN]	k ae b ax n
 5	[DRIPPING]	d r ih p ix ng
 5	[CALCULATED]	k ae l k y ax l ey dx ax d
+5	[THEIR]	dh eh r
 5	[VERY]	v eh r iy
 5	[OBEDIENTLY]	ow b iy dx iy ax n t l iy
+5	[IN]	ix n
 5	[PIKE]	p ay k
 5	[KEENLY]	k iy n l iy
 5	[CALM]	k aa m
 5	[MATE]	m ey t
+5	[DROPPED]	d r aa p t
 5	[FORBIDDEN]	f ao r b ix d ax n
+5	[READ]	r eh d
 5	[ORDAINED]	ao r d ey n d
 5	[VIRTUE]	v er ch uw
+5	[AT]	ae t
 5	[CRAWLED]	k r ao l d
 5	[TRACK]	t r ae k
+5	[KNOW]	n ow
 5	[EXACTLY]	ix g z ae k t l iy
 5	[BRIDGE]	b r ih jh
+5	[MEAN]	m iy n
+5	[MY]	m ay
 5	[MARCH]	m aa r ch
 5	[CORRECTED]	k er eh k t ax d
 5	[WHICH]	w ih ch
 5	[COMMON]	k aa m ax n
 5	[VICTORY]	v ih k t er iy
+5	[LIKE]	l ay k
 5	[PLACE]	p l ey s
 5	[OFF]	ao f
+5	[NOW]	n aw
 5	[FILL]	f ih l
 5	[DIG]	d ih g
 5	[DELIGHTED]	d ix l ay dx ax d
@@ -454,184 +637,383 @@
 5	[FAILED]	f ey l d
 5	[LAUGHTER]	l ae f t er
 5	[LONGER]	l ao ng g er
+5	[MUCH]	m ah ch
+5	[EIGHTEEN]	ey t iy n
+5	[THEY]	dh ey
 5	[DOUBLY]	d ah b l iy
 5	[YOU'VE]	y uw v
+5	[MEN]	m eh n
 5	[CUT]	k ah t
 5	[BATH]	b ae th
 5	[AGAIN]	ax g eh n
 5	[CHATTERING]	ch ae dx er ix ng
 5	[WE'RE]	w iy r
+5	[BOUGHT]	b aa t
 5	[ABLE]	ey b ax l
 5	[PAID]	p ey d
 5	[HEAT]	hh iy t
 5	[PUZZLED]	p ah z ax l d
+5	[WHY]	w ay
 5	[UP]	ah p
+5	[ANY]	eh n iy
+5	[WHAT]	w ah t
 5	[REVIEW]	r iy v y uw
+5	[HIM]	hh ih m
 5	[FOREMAN]	f ao r m ax n
 5	[EXPLAINED]	ix k s p l ey n d
 5	[EFFORT]	eh f er t
 5	[ATTACK]	ax t ae k
+5	[JEANNE]	jh iy n
+5	[COME]	k ah m
 5	[NEARLY]	n ih r l iy
+5	[EARTH]	er th
+5	[TIME]	t ay m
 5	[THOROUGHLY]	th er ow l iy
+5	[AFTER]	ae f t er
+5	[I'M]	ay m
 5	[THING]	th ih ng
+5	[FOLLOW]	f aa l ow
+5	[BECAME]	b ix k ey m
 5	[JOY]	jh oy
+5	[FEEL]	f iy l
+5	[OCCURRED]	ax k er d
 5	[BEYOND]	b ix aa n d
 5	[FOREHEAD]	f ao r hh eh d
 5	[BURNED]	b er n d
+5	[GOOD]	g uh d
 5	[THOUGH]	dh ow
+5	[GO]	g ow
 5	[DANGER]	d ey n jh er
 5	[PARTICULAR]	p er t ih k y ax l er
 5	[GLAD]	g l ae d
 5	[FORGET]	f er g eh t
+5	[WANT]	w aa n t
+5	[CAME]	k ey m
 5	[NEEDED]	n iy dx ax d
 5	[HEAD]	hh eh d
+5	[DOWN]	d aw n
 5	[CHANGE]	ch ey n jh
 5	[LINE]	l ay n
 5	[CANADIAN]	k ax n ey dx iy ax n
 5	[HUNDRED]	hh ah n d r ax d
 5	[LONG]	l ao ng
+5	[PHILIP]	f ih l ax p
+5	[ONLY]	ow n l iy
 5	[WATCH]	w aa ch
 5	[WONDER]	w ah n d er
 6	[WAITING]	w ey dx ix ng
+6	[HAD]	hh ae d
+6	[AN]	ae n
+6	[LONGER]	l ao ng g er
+6	[WHIPPED]	w ih p t
+6	[IT]	ih t
+6	[ALONG]	ax l ao ng
+6	[WITH]	w ih dh
+6	[HE]	hh iy
+6	[A]	ax
+6	[PART]	p aa r t
 6	[BEAU]	b ow
 6	[BABY]	b ey b iy
 6	[BEGUN]	b ix g ah n
 6	[HAPPY]	hh ae p iy
+6	[LOG]	l ao g
+6	[OF]	ah v
 6	[DEEP]	d iy p
+6	[UP]	ah p
+6	[FOR]	f ao r
 6	[THERMOMETER]	th er m aa m ax dx er
+6	[HUGHIE]	hh y uw iy
+6	[AND]	ae n d
+6	[TO]	t uw
+6	[FROM]	f r ah m
 6	[COFFEE]	k aa f iy
+6	[ANYTHING]	eh n iy th ih ng
+6	[AGAIN]	ax g eh n
 6	[CONVINCED]	k ax n v ih n s t
+6	[COULD]	k uh d
 6	[REFUGE]	r eh f y uw jh
 6	[LEAVE]	l iy v
+6	[AT]	ae t
 6	[EXCLAIMED]	ix k s k l ey m d
 6	[DONE]	d ah n
 6	[MINUTE]	m ih n ax t
+6	[IN]	ix n
+6	[JEANNE]	jh iy n
+6	[CAME]	k ey m
+6	[WHICH]	w ih ch
+6	[ME]	m iy
+6	[THE]	dh ax
+6	[HER]	hh er
+6	[NO]	n ow
 6	[KEY]	k iy
 6	[CARRIED]	k ae r iy d
 6	[MATCH]	m ae ch
 6	[UNDER]	ah n d er
+6	[LOOK]	l uh k
+6	[GET]	g eh t
 6	[TOWARD]	t ax w ao r d
+6	[BLOOD]	b l ah d
+6	[NOT]	n aa t
+6	[WHO]	hh uw
 6	[EXCEPT]	ix k s eh p t
 6	[REMAINED]	r ix m ey n d
+6	[BEAUTIFUL]	b y uw dx ax f ax l
+6	[IF]	ih f
 6	[OWN]	ow n
 6	[ENERGY]	eh n er jh iy
+6	[FAITH]	f ey th
 6	[WORK]	w er k
 6	[TOGETHER]	t ax g eh dh er
+6	[I]	ay
+6	[LONG]	l ao ng
+6	[MAN]	m ae n
 6	[BUILD]	b ih l d
+6	[LIKE]	l ay k
+6	[ON]	aa n
+6	[O'BRIEN]	ow b r ay ix n
+6	[KNEW]	n uw
+6	[BEGAN]	b ix g ae n
 6	[VOYAGE]	v oy ax jh
 6	[KNIFE]	n ay f
 6	[BEAUTY]	b y uw dx iy
 6	[WAILING]	w ey l ix ng
+6	[GOING]	g ow ix ng
 6	[TROUT]	t r aw t
+6	[FEW]	f y uw
 6	[PULLED]	p uh l d
 6	[BETTER]	b eh dx er
+6	[THEIR]	dh eh r
+6	[EARTH]	er th
+6	[THAT]	dh ae t
 6	[CALL]	k ao l
+6	[THEN]	dh eh n
+6	[GO]	g ow
+6	[DID]	d ih d
 6	[ENGAGE]	eh n g ey jh
 6	[QUART]	k w ao r t
+6	[DAY]	d ey
 6	[DATED]	d ey dx ix d
+6	[WE]	w iy
+6	[KNOW]	n ow
 6	[INCOME]	ih n k ah m
 6	[MURMURED]	m er m er d
 6	[DARK]	d aa r k
+6	[BOY]	b oy
 6	[FOURTH]	f ao r th
 6	[WOLF]	w uh l f
+6	[BY]	b ay
 6	[TAP]	t ae p
 6	[CURRY]	k ah r iy
 6	[EQUALLY]	iy k w ax l iy
 6	[NOD]	n aa d
+6	[FELT]	f eh l t
+6	[THEM]	dh eh m
 6	[GEORGE]	jh ao r jh
 6	[HARPOON]	hh aa r p uw n
+6	[HIM]	hh ih m
+6	[HEAD]	hh eh d
 6	[ORDER]	ao r dx er
+6	[NEW]	n uw
 6	[FIT]	f ih t
+6	[ALL]	ao l
 6	[DETERRENT]	d ix t er r ax n t
 6	[NEARER]	n ih r er
+6	[ONE]	w ah n
 6	[PUT]	p uh t
+6	[ONCE]	w ah n s
 6	[WHEEL]	w iy l
+6	[LOP-EAR]	l aa p ih r
 6	[EXPERIENCE]	ix k s p ih r iy ax n s
+6	[ALREADY]	ao l r eh dx iy
 6	[WAY]	w ey
 6	[THAN]	dh ae n
+6	[MORE]	m ao r
 6	[TERRIBLY]	t eh r ax b l iy
 6	[FORTH]	f ao r th
 6	[CHARGE]	ch aa r jh
 6	[BIG-FACE]	b ih g
 6	[BECOME]	b ix k ah m
 6	[WENT]	w eh n t
+6	[BEATING]	b iy dx ix ng
+6	[AGO]	ax g ow
+6	[HUNDRED]	hh ah n d r ax d
 6	[MUG]	m ah g
 6	[MIRTH]	m er th
 6	[CARED]	k eh r d
 6	[NICER]	n ay s er
+6	[HOW]	hh aw
+6	[HERE]	hh ih r
+6	[TOO]	t uw
 6	[FREIGHT]	f r ey t
 6	[CLEAN]	k l iy n
 6	[LIVED]	l ay v d
 6	[WHOEVER]	hh uw eh v er
+6	[THEY]	dh ey
 6	[BAPTIZED]	b ae p t ay z d
+6	[GOT]	g aa t
+6	[HAVE]	hh ae v
 6	[SHUNK]	sh ah ng k
 6	[TELL]	t eh l
+6	[OFF]	ao f
 6	[PLAIN]	p l ey n
 6	[VACATION]	v ey k ey sh ax n
+6	[TEETH]	t iy th
+6	[MY]	m ay
 6	[GAUNT]	g ao n t
 6	[LARGE]	l aa r jh
 6	[BEACH]	b iy ch
+6	[BIG]	b ih g
+6	[OVER]	ow v er
+6	[YOU'RE]	y uh r
 6	[UNITED]	y uw n ay dx ax d
+6	[A]	ax
+6	[GOOD]	g uh d
+6	[AWAY]	ax w ey
+6	[CAN'T]	k ae n t
 6	[HATE]	hh ey t
 6	[GENUINE]	jh eh n y ax w ax n
 6	[THORPE]	th ao r p
 6	[YEAR]	y ih r
+6	[YOUR]	y ao r
 6	[LEARNED]	l er n d
+6	[BACK]	b ae k
 6	[OUTER]	aw dx er
+6	[EIGHTEEN]	ey t iy n
 6	[AGED]	ey jh d
+6	[OUR]	aw er
+6	[GIVE]	g ih v
+6	[GROWING]	g r ow ix ng
 6	[CHEWING]	ch uw ix ng
+6	[COME]	k ah m
 6	[LAUNCHED]	l ao n ch t
 6	[TEARING]	t eh r ix ng
+6	[WERE]	w er
 6	[CANADA]	k ae n ax dx ax
 6	[EXCITING]	ix k s ay dx ix ng
 6	[ICE]	ay s
 6	[WATER]	w ao dx er
+6	[HAPPENED]	hh ae p ax n d
+6	[FILLED]	f ih l d
+6	[GAVE]	g ey v
 6	[COLD]	k ow l d
+6	[BUT]	b ah t
 6	[FOREVER]	f er eh v er
 6	[THROUGH]	th r uw
+6	[EVEN]	iy v ix n
 6	[CAREFUL]	k eh r f ax l
+6	[BEEN]	b ih n
 6	[GENTLEMEN]	jh eh n t ax l m ix n
+6	[HOPE]	hh ow p
 6	[FACED]	f ey s t
 6	[HAND]	hh ae n d
 6	[CHAIR]	ch eh r
+6	[NOW]	n aw
+6	[INTO]	ix n t uw
+6	[MADE]	m ey d
 6	[CAPITAL]	k ae p ax dx ax l
+6	[DO]	d uw
 6	[MOVING]	m uw v ix ng
 6	[FORCE]	f ao r s
 6	[TYPEWRITTEN]	t ay p r ih t ax n
+6	[DON'T]	d ow n t
 6	[NODDED]	n aa dx ax d
+6	[WHY]	w ay
+7	[IN]	ix n
+7	[COME]	k ah m
 7	[HOUR]	aw er
+7	[THE]	dh ax
+7	[A]	ax
+7	[WOULD]	w uh d
+7	[WITH]	w ih dh
 7	[TRAP]	t r ae p
 7	[GROWLED]	g r aw l d
 7	[WANDERER]	w aa n d er er
+7	[OF]	ah v
 7	[FLUNG]	f l ah ng
+7	[HAD]	hh ae d
+7	[MADE]	m ey d
+7	[ON]	aa n
 7	[CHILDREN]	ch ih l d r ax n
 7	[BREATH]	b r eh th
 7	[OIL]	oy l
+7	[FOR]	f ao r
+7	[AND]	ae n d
 7	[EAT]	iy t
 7	[DRAWLED]	d r ao l d
+7	[TO]	t uw
+7	[I]	ay
 7	[BROKEN]	b r ow k ax n
 7	[LED]	l eh d
+7	[FIRE]	f ay er
+7	[PIERRE]	p iy eh r
+7	[ANOTHER]	ax n ah dh er
+7	[NOT]	n aa t
+7	[JEANNE]	jh iy n
 7	[ENOUGH]	ix n ah f
+7	[AFTER]	ae f t er
+7	[THAT]	dh ae t
+7	[BLOOD]	b l ah d
+7	[HIM]	hh ih m
+7	[BETWEEN]	b ix t w iy n
+7	[UP]	ah p
 7	[CURRENT]	k er ax n t
+7	[IT]	ih t
+7	[HE]	hh iy
+7	[BROUGHT]	b r ao t
+7	[NO]	n ow
 7	[DEAF]	d eh f
+7	[WERE]	w er
+7	[ONLY]	ow n l iy
+7	[CHAIR]	ch eh r
+7	[EVERY]	eh v er iy
 7	[QUARTER]	k w ao r dx er
+7	[UNTIL]	ax n t ih l
 7	[JERK]	jh er k
+7	[NOW]	n aw
+7	[AWAY]	ax w ey
 7	[TINGLING]	t ih ng g ax l ix ng
+7	[ATE]	ey t
+7	[WORK]	w er k
+7	[HER]	hh er
+7	[AM]	ae m
+7	[THAN]	dh ae n
+7	[YOU]	y uw
+7	[THROUGH]	th r uw
+7	[PHILIP]	f ih l ax p
+7	[THREE]	th r iy
+7	[ONE]	w ah n
 7	[ROAD]	r ow d
 7	[EMITTING]	ix m ih dx ix ng
+7	[ARM]	aa r m
+7	[DOWN]	d aw n
+7	[YET]	y eh t
+7	[OUT]	aw t
+7	[MY]	m ay
 7	[RUN]	r ah n
+7	[BUT]	b ah t
 7	[METHOD]	m eh th ax d
 7	[APPEAR]	ax p ih r
+7	[TAPPED]	t ae p t
+7	[TURNED]	t er n d
 7	[FENCE]	f eh n s
+7	[ALONG]	ax l ao ng
+7	[NEW]	n uw
+7	[THEM]	dh eh m
 7	[BACHELOR]	b ae ch ax l er
 7	[PITCHED]	p ih ch t
 7	[WEIGH]	w ey
 7	[OAHU]	ow aa hh uw
 7	[GRACE]	g r ey s
 7	[VAINLY]	v ey n l iy
+7	[WHICH]	w ih ch
 7	[OR]	ao r
+7	[LIKE]	l ay k
+7	[TOGETHER]	t ax g eh dh er
+7	[TOO]	t uw
+7	[ARE]	aa r
 7	[MOORE]	m uh r
 7	[BURIED]	b eh r iy d
+7	[INTO]	ix n t uw
 7	[END]	eh n d
 7	[RIGHT]	r ay t
 7	[VELOCITY]	v ax l aa s ax dx iy
@@ -639,23 +1021,46 @@
 7	[HAWAIIAN]	hh ax w ay ax n
 7	[DONKEY]	d aa ng k iy
 7	[UPON]	ax p aa n
+7	[LENGTH]	l eh ng k th
 7	[DEPORTATION]	d iy p ao r t ey sh ax n
+7	[MORE]	m ao r
 7	[TOBACCO]	t ax b ae k ow
 7	[MEDICAL]	m eh dx ax k ax l
 7	[NINETEEN]	n ay n t iy n
+7	[LIVED]	l ay v d
 7	[YIELDED]	y iy l d ax d
+7	[FEW]	f y uw
+7	[BECAME]	b ix k ey m
 7	[INTERMITTENT]	ih n t er m ih t ax n t
+7	[HERE]	hh ih r
+7	[AGAIN]	ax g eh n
+7	[ANYTHING]	eh n iy th ih ng
 7	[LOOKING]	l uh k ix ng
+7	[DROWNED]	d r aw n d
 7	[OBTAIN]	ax b t ey n
+7	[ANY]	eh n iy
 7	[BONANZA]	b ax n ae n z ax
+7	[FILL]	f ih l
 7	[QUITE]	k w ay t
 7	[ROLLED]	r ow l d
 7	[DEVOTION]	d ix v ow sh ax n
+7	[LONG]	l ao ng
+7	[AT]	ae t
+7	[LIFE]	l ay f
 7	[LIVING]	l ih v ix ng
+7	[BE]	b iy
 7	[BODY]	b aa dx iy
+7	[THEY]	dh ey
+7	[AN]	ae n
+7	[BIG]	b ih g
+7	[WHO]	hh uw
 7	[PLENTY]	p l eh n t iy
+7	[BEEN]	b ih n
 7	[BOTH]	b ow th
+7	[ME]	m iy
 7	[REQUIRE]	r iy k w ay er
+7	[HALF]	hh ae f
+7	[HEAD]	hh eh d
 7	[CLUB]	k l ah b
 7	[MIGHT]	m ay t
 7	[MUZZLE]	m ah z ax l
@@ -663,10 +1068,15 @@
 7	[WAVE]	w ey v
 7	[BELL]	b eh l
 7	[GREW]	g r uw
+7	[WAY]	w ey
 7	[B]	b iy
 7	[LAND]	l ae n d
+7	[FOLLOW]	f aa l ow
 7	[CAMP]	k ae m p
+7	[WHERE]	w eh r
+7	[JOY]	jh oy
 7	[DOOR]	d ao r
+7	[ALREADY]	ao l r eh dx iy
 7	[EFFICIENTLY]	ix f ih sh ax n t l iy
 7	[YAP]	y ae p
 7	[CHILLY]	ch ih l iy
@@ -674,98 +1084,249 @@
 7	[THRILL]	th r ih l
 7	[DRIVER]	d r ay v er
 7	[PREPARED]	p r iy p eh r d
+7	[OVER]	ow v er
 7	[MAINTAIN]	m ey n t ey n
+7	[FROM]	f r ah m
+7	[EACH]	iy ch
 7	[POINTING]	p oy n t ix ng
+7	[EXCLAIMED]	ix k s k l ey m d
 7	[INTOXICATED]	ix n t aa k s ax k ey dx ax d
+7	[HAIR]	hh eh r
 7	[DANTE]	d aa n t ey
 7	[EVENING]	iy v n ix ng
+7	[I'LL]	ay l
 7	[FIGHTER]	f ay dx er
+7	[BEYOND]	b ix aa n d
 7	[RECOGNIZING]	r eh k ax g n ay z ix ng
 7	[PUBLIC]	p ah b l ix k
 7	[QUICKLY]	k w ih k l iy
+7	[THERE]	dh eh r
 7	[APART]	ax p aa r t
 7	[HOTEL]	hh ow t eh l
+7	[WITHIN]	w ix dh ih n
+8	[THE]	dh ax
+8	[INTO]	ix n t uw
+8	[TO]	t uw
 8	[MOTHER]	m ah dh er
+8	[BIG]	b ih g
+8	[HAVE]	hh ae v
+8	[HAIR]	hh eh r
+8	[WITHOUT]	w ix th aw t
+8	[IT]	ih t
+8	[UP]	ah p
+8	[BABY]	b ey b iy
 8	[CLICK]	k l ih k
+8	[DOWN]	d aw n
+8	[DAY]	d ey
+8	[HER]	hh er
 8	[COMPOUND]	k aa m p aw n d
 8	[REVENGE]	r iy v eh n jh
+8	[WITH]	w ih dh
 8	[WALL]	w ao l
+8	[AND]	ae n d
+8	[HIM]	hh ih m
+8	[DO]	d uw
+8	[OTHER]	ah dh er
+8	[HAD]	hh ae d
+8	[THAT]	dh ae t
 8	[RING]	r ih ng
 8	[QUIVERING]	k w ih v er ix ng
+8	[FOR]	f ao r
+8	[YOU]	y uw
+8	[THEIR]	dh eh r
+8	[IN]	ix n
+8	[BECAME]	b ix k ey m
+8	[LOOKED]	l uh k t
+8	[LONGER]	l ao ng g er
 8	[GAME]	g ey m
+8	[HOUR]	aw er
+8	[FROM]	f r ah m
 8	[LAMP]	l ae m p
+8	[A]	ax
+8	[AN]	ae n
+8	[HALF]	hh ae f
+8	[UNTIL]	ax n t ih l
+8	[HE]	hh iy
+8	[THROUGH]	th r uw
+8	[LARGE]	l aa r jh
+8	[FACE]	f ey s
+8	[LOOK]	l uh k
+8	[WHEN]	w eh n
 8	[PRODUCE]	p r ax d uw s
 8	[WOMBLE]	w aa m b ax l
+8	[JOY]	jh oy
+8	[FIRE]	f ay er
 8	[YUKON]	y uw k aa n
+8	[I]	ay
 8	[WOMAN]	w uh m ax n
+8	[ABOUT]	ax b aw t
+8	[AT]	ae t
+8	[OF]	ah v
+8	[BE]	b iy
+8	[POINTING]	p oy n t ix ng
 8	[LATER]	l ey dx er
+8	[WORK]	w er k
 8	[WAITED]	w ey dx ax d
 8	[REORGANIZATION]	r iy ao r g ax n ax z ey sh ax n
 8	[DOZEN]	d ah z ax n
+8	[LIVING]	l ih v ix ng
 8	[DOCTRINE]	d aa k t r ax n
+8	[ARE]	aa r
 8	[CHAMPAGNE]	sh ae m p ey n
+8	[HEAD]	hh eh d
+8	[NEVER]	n eh v er
+8	[EVERY]	eh v er iy
 8	[DAILY]	d ey l iy
 8	[MIRAGE]	m er aa zh
 8	[NOOK]	n uh k
+8	[BEFORE]	b ix f ao r
+8	[ON]	aa n
+8	[YOUR]	y ao r
 8	[WORLD]	w er l d
 8	[ARGUMENT]	aa r g y ax m ax n t
 8	[DARKER]	d aa r k er
+8	[MEAT]	m iy t
+8	[LEFT]	l eh f t
+8	[TWO]	t uw
 8	[HEEL]	hh iy l
+8	[BUT]	b ah t
+8	[TOO]	t uw
+8	[MUCH]	m ah ch
+8	[LITTLE]	l ih dx ax l
+8	[AGAIN]	ax g eh n
 8	[BOAT]	b ow t
+8	[OUR]	aw er
+8	[NEARER]	n ih r er
 8	[WAVING]	w ey v ix ng
+8	[GOT]	g aa t
 8	[TRIP]	t r ih p
+8	[COULD]	k uh d
+8	[BIT]	b ih t
+8	[WHICH]	w ih ch
 8	[OH]	ow
 8	[LYING]	l ay ix ng
+8	[ALL]	ao l
 8	[FOREGO]	f ao r g ow
 8	[DEED]	d iy d
 8	[ALBERTA]	ae l b er dx ax
 8	[APRON]	ey p r ax n
+8	[FIFTY]	f ih f t iy
 8	[HUNGRY]	hh ah ng g r iy
 8	[REWARD]	r ix w ao r d
 8	[CREEK]	k r iy k
 8	[QUARREL]	k w ao r ax l
 8	[LAID]	l ey d
+8	[TIME]	t ay m
+8	[ALREADY]	ao l r eh dx iy
 8	[CARGO]	k aa r g ow
 8	[YOUNG]	y ah ng
+8	[FOUND]	f aw n d
+8	[GROWING]	g r ow ix ng
+8	[HEAT]	hh iy t
 8	[ADVENTURE]	ae d v eh n ch er
 8	[BOWED]	b aw d
+8	[MADE]	m ey d
+8	[WOULD]	w uh d
 8	[PAY]	p ey
+8	[PLENTY]	p l eh n t iy
 8	[TALE]	t ey l
 8	[GROWN]	g r ow n
+8	[FORTY]	f ao r dx iy
 8	[WILDLY]	w ay l d l iy
+8	[TOWARD]	t ax w ao r d
 8	[FREED]	f r iy d
 8	[AGONY]	ae g ax n iy
+8	[THEY]	dh ey
 8	[UNTOWARD]	ax n t uw ao r d
+8	[AROUND]	er aw n d
+8	[CHANGED]	ch ey n jh d
 8	[MANAGING]	m ae n ax jh ix ng
 8	[GALLINA]	g aa l iy n ax
+8	[WOULDN'T]	w uh d ax n t
+8	[TOMORROW]	t ax m aa r ow
 8	[OLD]	ow l d
+8	[LIFE]	l ay f
 8	[MAULED]	m ao l d
+8	[THING]	th ih ng
 8	[GLIMMER]	g l ih m er
 8	[ANNOYING]	ax n oy ix ng
+8	[WERE]	w er
+8	[CAUGHT]	k aa t
 8	[CIVILIZATION]	s ih v ax l ix z ey sh ax n
+8	[BEYOND]	b ix aa n d
 8	[VITAL]	v ay dx ax l
+8	[QUICKLY]	k w ih k l iy
+8	[HAND]	hh ae n d
+8	[LOW]	l ow
+8	[MOMENT]	m ow m ax n t
+8	[TOLD]	t ow l d
+8	[CONTINUED]	k ax n t ih n y uw d
+8	[BY]	b ay
+8	[DEAD]	d eh d
 8	[DRAWN]	d r ao n
 8	[ENTERED]	eh n t er d
+8	[MIGHT]	m ay t
+8	[BEEN]	b ih n
 8	[APOLOGIZED]	ax p aa l ax jh ay z d
+8	[GO]	g ow
+8	[WHAT]	w ah t
 8	[BELIZE]	b eh l iy z
 8	[ORGANIZED]	ao r g ax n ay z d
 8	[NORTH]	n ao r th
+8	[REMAINED]	r ix m ey n d
+9	[IT]	ih t
 9	[REACH]	r iy ch
 9	[YEARNING]	y er n ix ng
 9	[OWL]	aw l
+9	[IN]	ix n
 9	[KILLED]	k ih l d
+9	[THE]	dh ax
+9	[AND]	ae n d
+9	[A]	ax
+9	[HIM]	hh ih m
+9	[WAY]	w ey
+9	[THROUGH]	th r uw
 9	[DECLINE]	d ix k l ay n
+9	[TO]	t uw
 9	[WARM]	w ao r m
+9	[HE]	hh iy
 9	[RECLINING]	r ix k l ay n ix ng
+9	[FENCE]	f eh n s
+9	[THEY]	dh ey
+9	[MY]	m ay
+9	[DOWN]	d aw n
+9	[I'M]	ay m
+9	[WITH]	w ih dh
 9	[HITTING]	hh ih dx ix ng
 9	[GUIDED]	g ay dx ax d
+9	[MORE]	m ao r
+9	[OF]	ah v
+9	[YOU]	y uw
+9	[AT]	ae t
+9	[CAMP]	k ae m p
+9	[NO]	n ow
+9	[QUICKLY]	k w ih k l iy
+9	[MEN]	m eh n
 9	[WHOLE]	hh ow l
 9	[MONTREAL]	m ah n t r iy ao l
 9	[BURNT]	b er n t
+9	[INDIAN]	ih n d iy ax n
+9	[HAD]	hh ae d
+9	[DETERMINED]	d ix t er m ax n d
+9	[TOMORROW]	t ax m aa r ow
+9	[TOOK]	t uh k
 9	[INK]	ih ng k
+9	[CABIN]	k ae b ax n
+9	[I]	ay
+9	[FOR]	f ao r
 9	[APPRECIATION]	ax p r iy sh iy ey sh ax n
 9	[ANNOUNCED]	ax n aw n s t
+9	[OVER]	ow v er
+9	[VERY]	v eh r iy
+9	[ALL]	ao l
 9	[BARBARIC]	b aa r b ae r ix k
+9	[LED]	l eh d
+9	[CHURCHILL]	ch er ch ix l
 9	[THRILLED]	th r ih l d
 9	[PIPE]	p ay p
 9	[EMPIRE]	eh m p ay er
@@ -773,17 +1334,27 @@
 9	[COOPERATIVE]	k ow aa p er ey dx ix v
 9	[MAKE]	m ey k
 9	[DEATH]	d eh th
+9	[COME]	k ah m
 9	[FIXED]	f ih k s t
 9	[DWELLER]	d w eh l er
+9	[ONE]	w ah n
+9	[DINNER]	d ih n er
 9	[CHEMICAL]	k eh m ax k ax l
 9	[DRUNK]	d r ah ng k
 9	[KNOWN]	n ow n
 9	[POUND]	p aw n d
 9	[ARGUE]	aa r g y uw
 9	[HAWAII]	hh ax w ay iy
+9	[THAT]	dh ae t
+9	[FROM]	f r ah m
 9	[APPEALED]	ax p iy l d
 9	[FATHER]	f aa dh er
 9	[CLUTCHING]	k l ah ch ix ng
+9	[OR]	ao r
+9	[HAND]	hh ae n d
+9	[ME]	m iy
+9	[LATER]	l ey dx er
+9	[INTO]	ix n t uw
 9	[VENOM]	v eh n ax m
 9	[GRIMLY]	g r ih m l iy
 9	[VAMPIRE]	v ae m p ay r
@@ -792,198 +1363,499 @@
 9	[CHAOTIC]	k ey aa dx ix k
 9	[THROUGHOUT]	th r uw aw t
 9	[FIFTEEN]	f ix f t iy n
+9	[BE]	b iy
+9	[TIME]	t ay m
+9	[YET]	y eh t
+9	[HEAD]	hh eh d
+9	[WORTH]	w er th
 9	[CONDUCT]	k ax n d ah k t
 9	[EIGHT]	ey t
+9	[GOT]	g aa t
+9	[REVENGE]	r iy v eh n jh
 9	[BRANCH]	b r ae n ch
 9	[KNOCKED]	n aa k t
+9	[THERE]	dh eh r
 9	[ELIJAH]	eh l ay jh ax
+9	[OUT]	aw t
+9	[REMAINED]	r ix m ey n d
+9	[TRUTH]	t r uw th
 9	[PAN]	p ae n
+9	[MUCH]	m ah ch
 9	[TODAY]	t ax d ey
+9	[BACK]	b ae k
+9	[MAN]	m ae n
 9	[JUNTA]	hh uh n t ax
+9	[LIKE]	l ay k
 9	[CHAIN]	ch ey n
+9	[ON]	aa n
+9	[FOLLOW]	f aa l ow
+9	[NOT]	n aa t
+9	[WHAT]	w ah t
+9	[LAKE]	l ey k
+9	[LE]	l ax
+9	[HUNDRED]	hh ah n d r ax d
+9	[TOBACCO]	t ax b ae k ow
 9	[IRRITATION]	ih r ix t ey sh ax n
+9	[YOUR]	y ao r
+9	[HERE]	hh ih r
+9	[THAN]	dh ae n
 9	[SOCIETY]	s ax s ay ax dx iy
 9	[REVEALED]	r ix v iy l d
+9	[NIGHT]	n ay t
 9	[MEETING]	m iy dx ix ng
+9	[FEW]	f y uw
 9	[AJAR]	ax jh aa r
+9	[BROKEN]	b r ow k ax n
+9	[GO]	g ow
 9	[PAW]	p ao
 9	[MERCY]	m er s iy
+9	[PART]	p aa r t
 9	[LUXURY]	l ah g zh er iy
+9	[CRY]	k r ay
+9	[PHILIP]	f ih l ax p
+9	[WITHIN]	w ix dh ih n
+9	[THREE]	th r iy
+9	[WHEN]	w eh n
+9	[HAVE]	hh ae v
 9	[DRUMMING]	d r ah m ix ng
 9	[ETC]	eh t s eh dx er ax
+9	[WHITTEMORE]	w ih t m ao r
+9	[TWO]	t uw
+9	[WE]	w iy
+9	[WHICH]	w ih ch
 9	[COOLER]	k uw l er
 9	[ACTUAL]	ae k ch ax w ax l
+9	[NORTH]	n ao r th
+9	[FIGHTING]	f ay dx ix ng
 9	[HANDED]	hh ae n d ax d
 9	[WOMEN]	w ih m ax n
 9	[HORRIFIED]	hh ao r ax f ay d
 9	[WEEK]	w iy k
+9	[COMING]	k ah m ix ng
+10	[OF]	ah v
+10	[NOW]	n aw
+10	[THE]	dh ax
+10	[IN]	ix n
 10	[JUDGMENT]	jh ah jh m ax n t
+10	[HIM]	hh ih m
 10	[THICK]	th ih k
 10	[FUR]	f er
 10	[FOREBODING]	f ao r b ow dx ix ng
 10	[FRIEND]	f r eh n d
 10	[FLOOR]	f l ao r
+10	[TO]	t uw
+10	[BEGAN]	b ix g ae n
+10	[HER]	hh er
+10	[THROUGH]	th r uw
 10	[FACING]	f ey s ix ng
+10	[BREAK]	b r ey k
+10	[LOOKED]	l uh k t
+10	[CHAIR]	ch eh r
+10	[A]	ax
+10	[WERE]	w er
 10	[CHALLENGE]	ch ae l ax n jh
+10	[GOING]	g ow ix ng
 10	[POOL]	p uw l
+10	[JEANNE]	jh iy n
 10	[POWERFUL]	p aw er f ax l
+10	[IF]	ih f
 10	[TRIUMPH]	t r ay ax m f
+10	[ME]	m iy
 10	[TRAGEDY]	t r ae jh ax dx iy
+10	[CAME]	k ey m
+10	[AND]	ae n d
+10	[INTO]	ix n t uw
+10	[OWN]	ow n
+10	[WOULD]	w uh d
+10	[FORGOTTEN]	f er g aa t ax n
+10	[DROPPED]	d r aa p t
 10	[WINDOW]	w ih n d ow
+10	[AN]	ae n
 10	[BLOT]	b l aa t
+10	[WITH]	w ih dh
+10	[LAUGHED]	l ae f t
 10	[RETORTED]	r iy t ao r dx ix d
 10	[POET]	p ow ax t
+10	[WHAT]	w ah t
+10	[GOOD]	g uh d
 10	[SIBERIA]	s ay b ih r iy ax
 10	[THAW]	th ao
+10	[LIFE]	l ay f
+10	[MAN]	m ae n
+10	[BEFORE]	b ix f ao r
+10	[WANT]	w aa n t
+10	[FROM]	f r ah m
+10	[THEM]	dh eh m
 10	[EXPECTED]	ix k s p eh k t ax d
 10	[TABLE]	t ey b ax l
+10	[WHITTEMORE]	w ih t m ao r
 10	[COMMONWEALTH]	k aa m ax n w eh l th
+10	[VERY]	v eh r iy
+10	[BEEN]	b ih n
+10	[WHOLE]	hh ow l
+10	[TODAY]	t ax d ey
 10	[FEEBLY]	f iy b l iy
+10	[HE]	hh iy
+10	[YOU]	y uw
+10	[LORD]	l ao r d
 10	[EARNED]	er n d
 10	[GREETING]	g r iy dx ix ng
+10	[THEY]	dh ey
 10	[CONFIDENCE]	k aa n f ax d ax n s
+10	[BELIEVE]	b ix l iy v
+10	[MOMENT]	m ow m ax n t
+10	[MY]	m ay
 10	[LEAPED]	l eh p t
 10	[GRUB]	g r ah b
+10	[PERRAULT]	p eh r ao l t
 10	[ABANDONMENT]	ax b ae n d ax n m ax n t
+10	[LAND]	l ae n d
 10	[HAT]	hh ae t
 10	[HONOLULU]	hh aa n ax l uw l uw
 10	[CONTRACTED]	k aa n t r ae k t ax d
 10	[HIGH]	hh ay
+10	[THREE]	th r iy
+10	[OR]	ao r
 10	[ADRIFT]	ax d r ih f t
 10	[FORWARD]	f ao r w er d
 10	[RHYTHM]	r ih dh ax m
+10	[NO]	n ow
 10	[FARTHER]	f aa r dh er
 10	[ALLY]	ae l ay
+10	[AT]	ae t
 10	[VITALITY]	v ay t ae l ax dx iy
+10	[AROUND]	er aw n d
 10	[BRIGHT]	b r ay t
+10	[VIRTUE]	v er ch uw
 10	[WILLING]	w ih l ix ng
 10	[QUIET]	k w ay ax t
+10	[CONTINUED]	k ax n t ih n y uw d
+10	[FOR]	f ao r
 10	[LOVER]	l ah v er
 10	[CERTITUDE]	s er dx ax t uw d
 10	[FAMILY]	f ae m ax l iy
+10	[THAT]	dh ae t
 10	[ELONGATED]	ix l ao ng g ey dx ax d
+10	[BE]	b iy
+10	[OCCURRED]	ax k er d
 10	[ROOM]	r uw m
 10	[AMONG]	ax m ah ng
 10	[PENT]	p eh n t
+10	[BEAU]	b ow
 10	[ROUND]	r aw n d
+10	[DEATH]	d eh th
+10	[ABOUT]	ax b aw t
+10	[FENCE]	f eh n s
 10	[PER]	p er
 10	[HOME]	hh ow m
 10	[ANNOY]	ax n oy
 10	[COD]	k aa d
 10	[BROKE]	b r ow k
+10	[WORTH]	w er th
+10	[MEN]	m eh n
+10	[LEFT]	l eh f t
+10	[TWO]	t uw
 10	[MIND]	m ay n d
 10	[FEATHERED]	f eh dh er d
+10	[ADVENTURE]	ae d v eh n ch er
+10	[DOG]	d ao g
+10	[ONCE]	w ah n s
 10	[CERTAIN]	s er t ax n
+10	[IT]	ih t
+10	[WILL]	w ih l
 10	[GREATER]	g r ey dx er
+10	[HAND]	hh ae n d
+10	[JOY]	jh oy
 10	[FOREFINGER]	f ao r f ih ng g er
+10	[THORPE]	th ao r p
 10	[GANG]	g ae ng
 10	[PHIL]	f ih l
+10	[LIKE]	l ay k
+10	[EXCLAIMED]	ix k s k l ey m d
+10	[LOOKING]	l uh k ix ng
+10	[ONLY]	ow n l iy
 10	[PETITIONED]	p ax t ih sh ax n d
 10	[CHIEFLY]	ch iy f l iy
 10	[COUNTRY]	k ah n t r iy
+10	[UP]	ah p
 11	[EDGE]	eh jh
+11	[THE]	dh ax
 11	[GROUND]	g r aw n d
 11	[FEAR]	f ih r
+11	[OR]	ao r
 11	[FIGHT]	f ay t
+11	[TO]	t uw
+11	[HIM]	hh ih m
+11	[FIRE]	f ay er
+11	[AT]	ae t
 11	[HAWK]	hh ao k
+11	[QUIVERING]	k w ih v er ix ng
 11	[WAIT]	w ey t
+11	[MR]	m ih s t er
 11	[EILEEN]	ay l iy n
+11	[OF]	ah v
+11	[THEM]	dh eh m
+11	[AND]	ae n d
+11	[GO]	g ow
 11	[MOTIVE]	m ow dx ix v
+11	[HE]	hh iy
+11	[UPON]	ax p aa n
+11	[IN]	ix n
+11	[ON]	aa n
+11	[UP]	ah p
+11	[CHURCHILL]	ch er ch ix l
+11	[THEY]	dh ey
+11	[WITHOUT]	w ix th aw t
 11	[LEANING]	l iy n ix ng
+11	[JEANNE]	jh iy n
+11	[BE]	b iy
 11	[TORONTO]	t er aa n t ow
 11	[AWAKEN]	ax w ey k ax n
+11	[CHAIR]	ch eh r
 11	[UNCOMFORTABLE]	ax n k ah m f er dx ax b ax l
+11	[UNDER]	ah n d er
 11	[FINALITY]	f ay n ae l ax dx iy
 11	[PETERBOROUGH]	p iy dx er b er ow
+11	[OUT]	aw t
 11	[MICHAEL]	m ay k ax l
 11	[PRETTY]	p r ih dx iy
 11	[FINGER]	f ih ng g er
+11	[BEGAN]	b ix g ae n
 11	[NATURAL]	n ae ch er ax l
 11	[RAPIDLY]	r ae p ax d l iy
 11	[TAUGHT]	t ao t
+11	[I]	ay
+11	[LIFE]	l ay f
+11	[CLEAN]	k l iy n
+11	[TOWARD]	t ax w ao r d
+11	[DRUNK]	d r ah ng k
 11	[COAL]	k ow l
+11	[DID]	d ih d
+11	[ALREADY]	ao l r eh dx iy
+11	[ME]	m iy
 11	[RAIL]	r ey l
+11	[OIL]	oy l
 11	[WIND]	w ay n d
 11	[KNOWLEDGE]	n aa l ax jh
+11	[VOYAGE]	v oy ax jh
+11	[YOU]	y uw
 11	[BREED]	b r iy d
+11	[A]	ax
 11	[BOX]	b aa k s
+11	[PER]	p er
+11	[ARGUMENT]	aa r g y ax m ax n t
+11	[BY]	b ay
 11	[INCUBATION]	ih ng k y uw b ey sh ax n
 11	[FUNK]	f ah ng k
 11	[NATIVE]	n ey dx ix v
 11	[FELL]	f eh l
+11	[THEIR]	dh eh r
+11	[TIME]	t ay m
+11	[DOWN]	d aw n
+11	[OFF]	ao f
+11	[THAT]	dh ae t
+11	[HUNDRED]	hh ah n d r ax d
 11	[DEVELOPED]	d ix v eh l ax p t
 11	[WELL]	w eh l
 11	[NECK]	n eh k
 11	[MARTHA]	m aa r th ax
+11	[CAPTAIN]	k ae p t ax n
+11	[WAY]	w ey
+11	[KILLED]	k ih l d
 11	[BAD]	b ae d
 11	[CIRCUMFERENCE]	s er k ah m f r ax n s
+11	[CABIN]	k ae b ax n
 11	[YOKE]	y ow k
+11	[MAY]	m ey
+11	[HEAD]	hh eh d
+11	[THROUGH]	th r uw
+11	[EVEN]	iy v ix n
 11	[PLANTATION]	p l ae n t ey sh ax n
+11	[HAWAII]	hh ax w ay iy
 11	[LIVER]	l ih v er
 11	[OAKLAND]	ow k l ax n d
+11	[INTO]	ix n t uw
+11	[WERE]	w er
+11	[NO]	n ow
 11	[BRING]	b r ih ng
+11	[YEARNING]	y er n ix ng
 11	[BED]	b eh d
+11	[DAY]	d ey
+11	[MORE]	m ao r
+11	[TWO]	t uw
 11	[HOLD]	hh ow l d
 11	[GROOMED]	g r uw m d
 11	[TEAR]	t eh r
 11	[BLACK]	b l ae k
+11	[TURNED]	t er n d
 11	[BEATRICE]	b iy ax t r ax s
 11	[PIANO]	p iy ae n ow
 11	[THROW]	th r ow
 11	[FEET]	f iy t
+11	[HATRED]	hh ey t r ax d
+11	[FOR]	f ao r
 11	[MET]	m eh t
 11	[INDUCED]	ix n d uw s t
 11	[PREVAILED]	p r ix v ey l d
+11	[CHILDREN]	ch ih l d r ax n
+11	[TEN]	t eh n
+11	[HERE]	hh ih r
+12	[BLACK]	b l ae k
+12	[OF]	ah v
 12	[HEART]	hh aa r t
+12	[A]	ax
+12	[THE]	dh ax
 12	[PRATTLE]	p r ae dx ax l
+12	[RING]	r ih ng
+12	[BACK]	b ae k
 12	[RELIEF]	r ix l iy f
+12	[THEM]	dh eh m
 12	[BROODED]	b r uw dx ix d
 12	[OVERFLOWING]	ow v er f l ow ix ng
+12	[FIGHT]	f ay t
+12	[PHILIP]	f ih l ax p
 12	[RIPPLING]	r ih p ax l ix ng
+12	[PIERRE]	p iy eh r
+12	[ON]	aa n
+12	[HIM]	hh ih m
+12	[UPON]	ax p aa n
+12	[BREAK]	b r ey k
+12	[OVER]	ow v er
 12	[HANDKERCHIEF]	hh ae ng k er ch ix f
+12	[HOUR]	aw er
+12	[BEFORE]	b ix f ao r
+12	[DAY]	d ey
 12	[CANOE]	k ax n uw
+12	[MADE]	m ey d
+12	[KNOW]	n ow
+12	[DID]	d ih d
 12	[GIRL]	g er l
+12	[DIE]	d ay
 12	[FILLING]	f ih l ix ng
+12	[CONTINUE]	k ax n t ih n y uw
+12	[TO]	t uw
+12	[HAVE]	hh ae v
+12	[IN]	ix n
 12	[ALCOHOL]	ae l k ax hh aa l
 12	[OOZE]	uw z
+12	[WE]	w iy
+12	[NOT]	n aa t
 12	[OBEDIENCE]	ow b iy dx iy ax n s
 12	[ARTICULATE]	aa r t ih k y ax l ey t
 12	[EVERYWHERE]	eh v r iy w eh r
 12	[HUMAN]	hh y uw m ax n
+12	[ENDURE]	eh n d y uh r
+12	[WERE]	w er
 12	[AFTER-ROOM]	ae f t er r uw m
 12	[DREADFULLY]	d r eh d f ax l iy
+12	[CLUB]	k l ah b
+12	[WORK]	w er k
 12	[ANCHOR]	ae ng k er
 12	[MURMURING]	m er m er ix ng
+12	[WITH]	w ih dh
 12	[CONTACT]	k aa n t ae k t
+12	[FOR]	f ao r
 12	[GIVETH]	g ih v eh th
 12	[OUTRUN]	aw t r ah n
 12	[FORM]	f ao r m
+12	[EACH]	iy ch
 12	[EXPECTANCY]	ix k s p eh k t ax n s iy
+12	[ALL]	ao l
+12	[YOUNG]	y ah ng
+12	[WHAT]	w ah t
+12	[HER]	hh er
+12	[MORE]	m ao r
+12	[HAD]	hh ae d
+12	[ARE]	aa r
+12	[OIL]	oy l
+12	[ONE]	w ah n
 12	[HEARTY]	hh aa r dx iy
+12	[GRUB]	g r ah b
+12	[JEANNE]	jh iy n
 12	[HIDING]	hh ay dx ix ng
+12	[FACE]	f ey s
+12	[EILEEN]	ay l iy n
+12	[GONE]	g ao n
+12	[BORN]	b ao r n
 12	[AGE]	ey jh
+12	[GOD]	g aa d
+12	[VERY]	v eh r iy
+12	[DIRT]	d er t
+12	[FOREVER]	f er eh v er
 12	[DEGREE]	d ix g r iy
 12	[NEED]	n iy d
 12	[DELICATE]	d eh l ax k ax t
+12	[AND]	ae n d
+12	[BY]	b ay
 12	[PEOPLE]	p iy p ax l
+12	[AN]	ae n
+12	[MY]	m ay
+12	[EVERY]	eh v er iy
+13	[IT]	ih t
+13	[HOME]	hh ow m
+13	[BIG]	b ih g
+13	[OF]	ah v
+13	[CAME]	k ey m
 13	[ALONE]	ax l ow n
 13	[CAUTION]	k aa sh ax n
+13	[VOICE]	v oy s
 13	[ROCK]	r aa k
 13	[BANK]	b ae ng k
+13	[DAY]	d ey
+13	[THE]	dh ax
+13	[MADE]	m ey d
 13	[PENCIL]	p eh n s ax l
+13	[HIM]	hh ih m
+13	[OR]	ao r
 13	[DOCUMENT]	d aa k y ax m eh n t
+13	[FOR]	f ao r
+13	[DOOR]	d ao r
+13	[FACE]	f ey s
+13	[WORK]	w er k
+13	[BEYOND]	b ix aa n d
+13	[LIVED]	l ay v d
+13	[THAT]	dh ae t
 13	[BURN]	b er n
 13	[ROLL]	r ow l
+13	[BORN]	b ao r n
 13	[BORED]	b ao r d
+13	[BY]	b ay
 13	[ABUNDANCE]	ax b ah n d ax n s
 13	[TABOO]	t ae b uw
+13	[MEAT]	m iy t
+13	[FEET]	f iy t
+13	[A]	ax
+13	[THEM]	dh eh m
+13	[YEAR]	y ih r
 13	[VAULTING]	v ao l t ix ng
 13	[PATINO]	p aa t iy n ow
+13	[COMPOUND]	k aa m p aw n d
+13	[HAPPENED]	hh ae p ax n d
+13	[BROUGHT]	b r ao t
 13	[AFTERNOON]	ae f t er n uw n
+13	[LAUGHTER]	l ae f t er
+13	[PIERRE]	p iy eh r
+13	[JEANNE]	jh iy n
+13	[GAME]	g ey m
+13	[ONE]	w ah n
+13	[POWERFUL]	p aw er f ax l
+13	[TO]	t uw
 13	[ACCOUNTING]	ax k aw n t ix ng
 13	[FAVOR]	f ey v er
+14	[FIGHT]	f ay t
+14	[CANOE]	k ax n uw
+14	[TWO]	t uw
 14	[IMAGINING]	ix m ae jh ax n ix ng
+14	[AWAY]	ax w ey
+14	[WELL]	w eh l
+14	[HAND]	hh ae n d
 14	[RIDER]	r ay dx er
 14	[NAOMI]	n ey ow m iy
 14	[AMBITION]	ae m b ih sh ax n
+14	[MOMENT]	m ow m ax n t
+14	[HAPPENED]	hh ae p ax n d
+14	[UP]	ah p
+14	[OWL]	aw l
+14	[LIFE]	l ay f
+14	[NOW]	n aw
 14	[BUY]	b ay

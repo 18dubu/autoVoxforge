@@ -12,7 +12,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/E6998$align.coverage" NAME="align Coverage Results" MODIFIED="1413960704043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/E6998$pre_processing.coverage" NAME="pre-processing Coverage Results" MODIFIED="1412876688472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/E6998$speechRecognition.coverage" NAME="speechRecognition Coverage Results" MODIFIED="1414045503684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -29,15 +31,14 @@
       <file leaf-file-name="pre-processing.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pre-processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="716" column="37" selection-start="29428" selection-end="29428" vertical-scroll-proportion="0.8083067" vertical-offset="8372" max-vertical-offset="8745">
+            <state line="506" column="42" selection-start="20436" selection-end="20989" vertical-scroll-proportion="0.41761363" vertical-offset="5643" max-vertical-offset="10860">
               <folding>
                 <element signature="e#26#46#0" expanded="true" />
-                <element signature="e#1067#1653#0" expanded="false" />
-                <element signature="e#1829#3439#0" expanded="false" />
-                <element signature="e#3883#4740#0" expanded="false" />
-                <element signature="e#5158#6627#0" expanded="false" />
-                <element signature="e#7239#8423#0" expanded="false" />
-                <element signature="e#8513#9130#0" expanded="false" />
+                <element signature="e#1092#1678#0" expanded="false" />
+                <element signature="e#1854#3464#0" expanded="false" />
+                <element signature="e#5183#6652#0" expanded="false" />
+                <element signature="e#7264#8448#0" expanded="false" />
+                <element signature="e#8538#9155#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="0" selection-end="17639" vertical-scroll-proportion="-1.6818181" vertical-offset="61" max-vertical-offset="5460">
+            <state line="2" column="24" selection-start="101" selection-end="101" vertical-scroll-proportion="-0.6818182" vertical-offset="0" max-vertical-offset="5460">
               <folding>
                 <element signature="e#294#1899#0" expanded="false" />
                 <element signature="e#1953#2371#0" expanded="false" />
@@ -76,6 +77,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="string.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/string.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="31" selection-start="3034" selection-end="3034" vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speechRecognition.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speechRecognition.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="73" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -90,6 +109,9 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/../pre-processing copy 2.py" />
         <option value="$PROJECT_DIR$/lib/file.py" />
+        <option value="$PROJECT_DIR$/lib/align.py" />
+        <option value="$PROJECT_DIR$/lib/string.py" />
+        <option value="$PROJECT_DIR$/speechRecognition.py" />
         <option value="$PROJECT_DIR$/pre-processing.py" />
       </list>
     </option>
@@ -158,6 +180,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E6998" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E6998" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alignment-1.0.9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -180,7 +220,7 @@
       <recent name="$PROJECT_DIR$/manual" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pre-processing">
+  <component name="RunManager" selected="Python.speechRecognition">
     <configuration default="false" name="pre-processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,6 +235,44 @@
       <module name="E6998" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pre-processing.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="align" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="E6998" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/string.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="speechRecognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="E6998" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speechRecognition.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -350,12 +428,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.pre-processing" />
+      <item index="1" class="java.lang.String" itemvalue="Python.align" />
+      <item index="2" class="java.lang.String" itemvalue="Python.speechRecognition" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.pre-processing" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.speechRecognition" />
+        <item index="1" class="java.lang.String" itemvalue="Python.align" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pre-processing" />
       </list>
     </recent_temporary>
   </component>
@@ -387,23 +469,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17609046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44281524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3856305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -434,12 +516,11 @@
         <state line="566" column="0" selection-start="23187" selection-end="23344" vertical-scroll-proportion="0.0" vertical-offset="8025" max-vertical-offset="8025">
           <folding>
             <element signature="e#26#46#0" expanded="true" />
-            <element signature="e#1067#1653#0" expanded="false" />
-            <element signature="e#1829#3439#0" expanded="false" />
-            <element signature="e#3883#4740#0" expanded="false" />
-            <element signature="e#5158#6627#0" expanded="false" />
-            <element signature="e#7239#8423#0" expanded="false" />
-            <element signature="e#8513#9130#0" expanded="false" />
+            <element signature="e#1092#1678#0" expanded="false" />
+            <element signature="e#1854#3464#0" expanded="false" />
+            <element signature="e#5183#6652#0" expanded="false" />
+            <element signature="e#7264#8448#0" expanded="false" />
+            <element signature="e#8538#9155#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -480,9 +561,16 @@
         <state line="30" column="0" selection-start="307" selection-end="638" vertical-scroll-proportion="0.83916086" vertical-offset="30" max-vertical-offset="5325" />
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/alignment/sequencealigner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="6045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="0" selection-end="17639" vertical-scroll-proportion="-1.6818181" vertical-offset="61" max-vertical-offset="5460">
+        <state line="2" column="24" selection-start="101" selection-end="101" vertical-scroll-proportion="-0.6818182" vertical-offset="0" max-vertical-offset="5460">
           <folding>
             <element signature="e#294#1899#0" expanded="false" />
             <element signature="e#1953#2371#0" expanded="false" />
@@ -511,17 +599,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="31" selection-start="3034" selection-end="3034" vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speechRecognition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="73" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pre-processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="716" column="37" selection-start="29428" selection-end="29428" vertical-scroll-proportion="0.8083067" vertical-offset="8372" max-vertical-offset="8745">
+        <state line="506" column="42" selection-start="20436" selection-end="20989" vertical-scroll-proportion="0.41761363" vertical-offset="5643" max-vertical-offset="10860">
           <folding>
             <element signature="e#26#46#0" expanded="true" />
-            <element signature="e#1067#1653#0" expanded="false" />
-            <element signature="e#1829#3439#0" expanded="false" />
-            <element signature="e#3883#4740#0" expanded="false" />
-            <element signature="e#5158#6627#0" expanded="false" />
-            <element signature="e#7239#8423#0" expanded="false" />
-            <element signature="e#8513#9130#0" expanded="false" />
+            <element signature="e#1092#1678#0" expanded="false" />
+            <element signature="e#1854#3464#0" expanded="false" />
+            <element signature="e#5183#6652#0" expanded="false" />
+            <element signature="e#7264#8448#0" expanded="false" />
+            <element signature="e#8538#9155#0" expanded="false" />
           </folding>
         </state>
       </provider>
