@@ -69,3 +69,10 @@ def stringMatching(stringList1, stringList2, replacementPenalty=1.5, gapPenalth 
     #print matchedString2, stringList2
     #print align
     return [matchedString1,matchedString2,align]
+
+#stringMatching('this is a test case for function stringMatching'.split(),\
+#               'that is not a valid test for function stringMatching'.split())
+#output:
+#['this', 'is', '-', 'a', '-', 'test', 'case', 'for', 'function', 'stringMatching']
+#['that', 'is', 'not', 'a', 'valid', 'test', '-', 'for', 'function', 'stringMatching']
+#['R', 'M', 'I', 'M', 'I', 'M', 'D', 'M', 'M', 'M']

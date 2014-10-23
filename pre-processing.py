@@ -544,12 +544,13 @@ os.system('say "hmm18 has finished"')
 #os.system('mv ./tmp ./manual/tree2.hed')
 
 # ERROR [+5010]  InitSource: Cannot open source file t+ow
+'''
 command_line = 'cd ./manual/ && HHEd -A -D -T 1 -H hmm18/macros -H hmm18/hmmdefs -M hmm19 split.hed tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
 os.system('say "hmm19 has finished"')
-
-command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm19/macros -H hmm19/hmmdefs -M hmm20 tiedlist'
+'''
+command_line = 'cd ./manual/ && HERest -A -D -T 1 -T 1 -C config -I wintri.mlf -s stats -t 250.0 150.0 3000.0 -S train.scp -H hmm18/macros -H hmm18/hmmdefs -M hmm20 tiedlist'
 cmd_list.append(command_line)
 os.system(command_line)
 os.system('say "hmm20 has finished"')
@@ -810,6 +811,7 @@ for dir in predictedSentence2D.keys():
     for track in predictedSentence2D[dir].keys():
         prom = promptSentence2D[dir][track].lower()
         pred = predictedSentence2D[dir][track].lower()
+        totalLength += len(prom.split())
         if not predictedSentence2D[dir][track] == '<search failed>':
             matched = stringMatching(prom.split(), pred.split())
 
@@ -821,11 +823,11 @@ for dir in predictedSentence2D.keys():
             totalInsertion += len(insert)
             totalDeletion += len(delete)
             totalReplacement += len(replace)
-            totalLength += len(prom.split())
+
             totalMatch += len(match)
             #calculate statistics
-            line1 = 'PROMPT: ' + dir + '\t' + track + '\t' + prom #+ '\t' + ' '.join(matched[0]) + '\t' + ' '.join(matched[2])
-            line2 = 'RESULT: ' + dir + '\t' + track + '\t' + pred #+ '\t' + ' '.join(matched[1])
+            line1 = 'PROMPT: ' + dir + '\t' + track + '\t' + prom + '\t' + ' '.join(matched[0]) + '\t' + ' '.join(matched[2])
+            line2 = 'RESULT: ' + dir + '\t' + track + '\t' + pred + '\t' + ' '.join(matched[1])
             fhIn.write(line1 + '\n')
             fhIn.write(line2 + '\n')
 fhIn.close()
